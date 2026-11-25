@@ -1,0 +1,696 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary":"#ffffff","surface-dim":"#cbdbf5","tertiary-fixed-dim":"#98da27","on-surface":"#0b1c30","on-primary-container":"#00422b","surface-bright":"#f8f9ff","error":"#ba1a1a","tertiary-fixed":"#b2f746","on-primary-fixed":"#002113","surface-container":"#e5eeff","surface-container-lowest":"#ffffff","surface-container-low":"#eff4ff","tertiary":"#446900","on-error-container":"#93000a","on-secondary":"#ffffff","secondary-fixed":"#dce2f6","outline-variant":"#bbcabf","on-primary":"#ffffff","secondary-fixed-dim":"#c0c6da","background":"#f8f9ff","surface":"#f8f9ff","on-error":"#ffffff","surface-tint":"#006c49","primary-container":"#10b981","on-secondary-fixed-variant":"#404757","surface-variant":"#d3e4fe","on-secondary-fixed":"#151b2a","primary-fixed-dim":"#4edea3","on-background":"#0b1c30","surface-container-highest":"#d3e4fe","inverse-primary":"#4edea3","inverse-on-surface":"#eaf1ff","error-container":"#ffdad6","primary-fixed":"#6ffbbe","on-tertiary-fixed":"#121f00","on-tertiary-container":"#283f00","surface-container-high":"#dce9ff","secondary":"#585e6f","secondary-container":"#d9dff4","tertiary-container":"#78b300","inverse-surface":"#213145","on-secondary-container":"#5c6274","on-tertiary-fixed-variant":"#334f00","outline":"#6c7a71","primary":"#006c49","on-primary-fixed-variant":"#005236","on-surface-variant":"#3c4a42"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"gutter-md":"1.5rem","space-sm":"0.5rem","margin-lg":"3rem","space-xs":"0.25rem","space-xl":"2rem","margin-md":"1.5rem","margin":"1rem","space-2xl":"3rem","gutter":"1rem","space-md":"1rem","gutter-lg":"2rem","space-lg":"1.5rem"},"fontFamily":{"headline-lg-mobile":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"currency-display":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-xl":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"]},"fontSize":{"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"22px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","fontWeight":"700"}],"currency-display":["28px",{"lineHeight":"34px","fontWeight":"800"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl":["40px",{"lineHeight":"48px","fontWeight":"800"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["30px",{"lineHeight":"38px","fontWeight":"700"}],"headline-xl-mobile":["32px",{"lineHeight":"40px","fontWeight":"800"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-inverse-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="p-space-lg flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded bg-primary-container flex items-center justify-center shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-on-primary-container text-[22px]">local_shipping</span></div><div><span class="font-headline-sm text-headline-sm text-inverse-on-surface tracking-tight block">ROUTENA</span><span class="font-label-sm text-label-sm text-inverse-on-surface/60 uppercase tracking-wider block">Mobility Command</span></div></div><div class="mt-space-sm inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-lowest/10 w-fit"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-inverse-on-surface">Calabar Hub: Active</span></div></div><nav class="flex flex-col px-space-sm gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm"><a class="flex items-center justify-between px-space-md py-space-sm rounded text-inverse-on-surface/75 hover:bg-surface-container-lowest/10 hover:text-inverse-on-surface transition-colors font-label-lg text-label-lg" data-path="operations-command" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="">Operations Command</span></span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded text-inverse-on-surface/75 hover:bg-surface-container-lowest/10 hover:text-inverse-on-surface transition-colors font-label-lg text-label-lg" data-path="live-fleet-trips" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">alt_route</span><span class="">Live Fleet &amp; Trips</span></span><span class="px-space-xs py-0.5 rounded-full bg-surface-container-lowest/15 text-inverse-on-surface font-label-sm text-label-sm">318</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded text-inverse-on-surface/75 hover:bg-surface-container-lowest/10 hover:text-inverse-on-surface transition-colors font-label-lg text-label-lg" data-path="fuel-index-engine" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">local_gas_station</span><span class="">Fuel Index Engine</span></span><span class="w-2 h-2 rounded-full bg-tertiary-fixed"></span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded text-inverse-on-surface/75 hover:bg-surface-container-lowest/10 hover:text-inverse-on-surface transition-colors font-label-lg text-label-lg" data-path="financial-escrow-payouts" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span class="">Financial Escrow &amp; Payouts</span></span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded text-inverse-on-surface/75 hover:bg-surface-container-lowest/10 hover:text-inverse-on-surface transition-colors font-label-lg text-label-lg" data-path="driver-approvals-kyc" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">how_to_reg</span><span class="">Driver Approvals &amp; KYC</span></span><span class="px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">3 pending</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded text-inverse-on-surface/75 hover:bg-surface-container-lowest/10 hover:text-inverse-on-surface transition-colors font-label-lg text-label-lg" data-path="safety-disputes" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">shield</span><span class="">Safety &amp; Disputes</span></span><span class="px-space-xs py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm">1 alert</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded text-inverse-on-surface/75 hover:bg-surface-container-lowest/10 hover:text-inverse-on-surface transition-colors font-label-lg text-label-lg" data-path="system-settings" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">settings</span><span class="">System Settings</span></span></a></nav></div><div class="p-space-md m-space-sm rounded bg-surface-container-lowest/5 flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-inverse-on-surface/70 uppercase tracking-wider">Node Controller</span><span class="font-label-sm text-label-sm text-primary-fixed">WAT (UTC+1)</span></div><span class="font-body-sm text-body-sm text-inverse-on-surface/90">Akanno Tech Labs Limited</span><span class="font-label-sm text-label-sm text-inverse-on-surface/50">Calabar Sector Grid v3.4.1</span></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/90 backdrop-blur-xl z-40 flex items-center justify-between px-gutter-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-lg"><div class="flex flex-col"><div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant"><span class="font-title-md text-title-md text-on-surface">Cross River Sector</span><span class="material-symbols-outlined text-[16px]">chevron_right</span><span class="">Calabar Metro</span><span class="material-symbols-outlined text-[16px]">chevron_right</span><span class="text-primary font-headline-sm text-headline-sm">Live Grid</span></div><div class="flex items-center gap-space-sm mt-0.5"><span class="font-body-sm text-body-sm text-on-surface-variant">WAT 14:42:08</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span class="font-body-sm text-body-sm text-on-surface-variant">Marian • UNICAL • Airport Corridor</span></div></div><div class="hidden xl:flex items-center gap-space-sm px-space-md py-space-xs rounded-full bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-ping"></span><span class="font-label-sm text-label-sm text-on-surface">Calabar NNPC Depot: <strong class="text-primary">₦780.00/L</strong></span><span class="text-outline-variant">•</span><span class="font-label-sm text-label-sm text-on-surface">Retail Avg: <strong class="text-secondary">₦815.00/L</strong></span></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container"><span class="material-symbols-outlined text-primary text-[18px]">swap_calls</span><span class="font-label-md text-label-md text-on-surface">318 Active Trips</span></div><div class="flex items-center gap-space-sm"><button class="px-space-md py-space-xs rounded bg-surface-container-high text-on-surface hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md flex items-center gap-space-xs shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[18px]">tune</span><span class="">Manual Fuel Override</span></button><button class="px-space-md py-space-xs rounded bg-error-container text-on-error-container hover:bg-error hover:text-on-error transition-colors font-label-md text-label-md flex items-center gap-space-xs shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[18px]">campaign</span><span class="">Emergency Broadcast</span></button></div><div class="h-8 w-[1px] bg-surface-variant"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface">Nseobong E.</span><span class="font-label-sm text-label-sm text-on-surface-variant">Lead Ops Controller</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 px-gutter-lg pb-space-2xl bg-background"><div class="flex flex-col w-full">
+<!-- Top Command Header & KPI Ribbon -->
+<div class="flex flex-col gap-space-lg mb-space-xl">
+<!-- Title Area & Real-time Synchronization Header -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Tier-1 Verification Gateway
+          </span>
+<span class="font-label-sm text-label-sm text-secondary">Grid Node: Marian Central</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Driver Approvals &amp; KYC Compliance</h1>
+<p class="font-body-md text-body-md text-secondary mt-0.5 max-w-3xl">
+          Cross River State VIO, LASRRA/MOT compliance, biometric identity vetting, and computerized vehicle roadworthiness certification stream.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start xl:self-auto">
+<button class="px-space-md py-space-sm rounded bg-surface-container-high text-on-surface hover:bg-surface-container font-label-md text-label-md flex items-center gap-space-xs transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span class="">Audit Ledger (.CSV)</span>
+</button>
+<button class="px-space-md py-space-sm rounded bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container font-label-md text-label-md flex items-center gap-space-xs transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+<span class="">Manual Candidate Intake</span>
+</button>
+</div>
+</div>
+<!-- Quick KPI Stats Ribbon -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- KPI 1 -->
+<div class="p-space-lg rounded bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Pending Submissions</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">pending_actions</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-baseline justify-between">
+<span class="font-currency-display text-currency-display text-on-surface">28</span>
+<span class="font-label-sm text-label-sm text-error bg-error-container/60 px-space-xs py-0.5 rounded">12 Urgent (&lt;48h)</span>
+</div>
+<div class="mt-space-xs flex items-center gap-space-xs text-secondary font-body-sm text-body-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="">7 completed in last 60 mins</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="p-space-lg rounded bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Verified Driver Partners</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-baseline justify-between">
+<span class="font-currency-display text-currency-display text-on-surface">1,240</span>
+<span class="font-label-sm text-label-sm text-primary bg-primary/10 px-space-xs py-0.5 rounded font-headline-sm">+4.8% wow</span>
+</div>
+<div class="mt-space-xs flex items-center gap-space-xs text-secondary font-body-sm text-body-sm">
+<span class="">Active in Calabar Metro Area</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="p-space-lg rounded bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Avg. Approval Velocity</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">timer</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-baseline justify-between">
+<span class="font-currency-display text-currency-display text-on-surface">4.2 <span class="font-headline-sm text-headline-sm text-secondary">Hours</span></span>
+<span class="font-label-sm text-label-sm text-primary bg-primary/10 px-space-xs py-0.5 rounded">-18m vs target</span>
+</div>
+<div class="mt-space-xs flex items-center gap-space-xs text-secondary font-body-sm text-body-sm">
+<span class="">Target SLA: &lt;6.0h per candidate</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="p-space-lg rounded bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Resubmission Rate</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-baseline justify-between">
+<span class="font-currency-display text-currency-display text-on-surface">8.4%</span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-high px-space-xs py-0.5 rounded">Stable</span>
+</div>
+<div class="mt-space-xs flex items-center gap-space-xs text-secondary font-body-sm text-body-sm">
+<span class="">Top cause: Blurry Hackney Seals</span>
+</div>
+</div>
+</div>
+<!-- Filter & Search Sub-Bar -->
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-md">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-secondary text-[20px]">search</span>
+<input class="w-full pl-11 pr-space-md py-space-sm rounded bg-surface-container-low text-on-surface placeholder:text-secondary/70 font-body-md text-body-md outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" placeholder="Search by Driver Name, NIN, Phone, Plate No, or Reg ID..." type="text">
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Status Dropdown -->
+<div class="relative">
+<select class="appearance-none bg-surface-container-low text-on-surface font-label-md text-label-md px-space-md py-space-sm pr-8 rounded outline-none cursor-pointer hover:bg-surface-container transition-colors">
+<option>Status: Pending Review (28)</option>
+<option>Status: Flagged / Action Required</option>
+<option>Status: Ready for Final Signoff</option>
+<option>Status: All Submissions</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-secondary pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Tier Dropdown -->
+<div class="relative">
+<select class="appearance-none bg-surface-container-low text-on-surface font-label-md text-label-md px-space-md py-space-sm pr-8 rounded outline-none cursor-pointer hover:bg-surface-container transition-colors">
+<option>Vehicle: All Tiers</option>
+<option>ROUTENA Eco / Sedan</option>
+<option>ROUTENA Comfort</option>
+<option>ROUTENA XL (7-Seater)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-secondary pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Corridor / LGA Dropdown -->
+<div class="relative">
+<select class="appearance-none bg-surface-container-low text-on-surface font-label-md text-label-md px-space-md py-space-sm pr-8 rounded outline-none cursor-pointer hover:bg-surface-container transition-colors">
+<option>Corridor: All Cross River</option>
+<option>Calabar Municipal</option>
+<option>Calabar South</option>
+<option>Marian / UNICAL Axis</option>
+<option>Odukpani Junction</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-secondary pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Quick Clear / Reset -->
+<button class="p-space-sm rounded bg-surface-container-low text-secondary hover:text-on-surface hover:bg-surface-container transition-colors" title="Reset Filters">
+<span class="material-symbols-outlined text-[20px]">filter_alt_off</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Content Split Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT / CENTER: Queue Table Stream (65% width approx -> 8 of 12 cols) -->
+<div class="lg:col-span-7 xl:col-span-8 flex flex-col gap-space-md">
+<!-- Queue Header Bar -->
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-title-md text-title-md text-on-surface">Incoming Verification Queue</span>
+<span class="px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold">28 Pending</span>
+</div>
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="">Sort by:</span>
+<button class="font-label-md text-label-md text-on-surface inline-flex items-center gap-0.5 hover:text-primary">
+            Application Urgency <span class="material-symbols-outlined text-[16px]">arrow_drop_down</span>
+</button>
+</div>
+</div>
+<!-- Candidate 1: SELECTED ROW (Bassey Offiong) -->
+<div class="p-space-lg rounded-lg bg-surface-container-lowest shadow-sm hover:shadow transition-all cursor-pointer relative overflow-hidden ring-2 ring-primary-container">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="relative">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm bg-surface-container" data-alt="Close up professional portrait of a 30-year-old Nigerian man smiling confidently with sharp lighting and clean neutral background suitable for a corporate verified driver badge." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd92Of2cE_IfLGsf-1r7vISOkOrhUdb35hQPnlgk-kcrgYC7oi74Juun7llZ68yB3Fr7l5DnxEU9roF8-a0REbjRe75AdWzePvzS83mPUTng-vz2Pff0R9EqqfT-wsaqq4B4Ctw-1lRVWp-MJ7R7z2u0DDTi8SGXDQwO_HtYFQl_4onHPNdl4LXpBvIyflsYzjdNdDdH_T_B6pjuEFOCbibj3m3q0YCqGb_GjcMC8n">
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-primary flex items-center justify-center text-on-primary text-[12px] shadow-sm">
+<span class="material-symbols-outlined text-[12px]">check</span>
+</div>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Bassey Edet Offiong</span>
+<span class="font-label-sm text-label-sm bg-surface-container text-secondary px-space-xs py-0.5 rounded">ID: RTN-8821-CR</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface font-semibold px-space-xs py-0.5 rounded">Toyota Yaris 2018</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-space-xs text-secondary font-body-sm text-body-sm mt-1">
+<span class="flex items-center gap-1 font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">directions_car</span>
+                  CAL-311-AA (Sedan)
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">pin_drop</span>
+                  Calabar Municipal
+                </span>
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                  Applied 2h ago
+                </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md justify-between md:justify-end">
+<div class="text-right hidden sm:block">
+<div class="font-label-sm text-label-sm text-secondary">Document Integrity</div>
+<div class="font-headline-sm text-headline-sm text-primary flex items-center gap-1 justify-end">
+                5 / 5 <span class="font-body-sm text-body-sm text-secondary">Uploaded</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+                In Inspection Dossier
+              </span>
+<span class="text-secondary font-label-sm text-label-sm">Risk Score: Low (0.04)</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-low/50 -mx-space-lg -mb-space-lg px-space-lg py-space-sm">
+<div class="flex items-center gap-space-sm text-body-sm text-body-sm text-secondary">
+<span class="inline-flex items-center gap-1 text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">badge</span> NIN NIMC Verified
+            </span>
+<span class="">•</span>
+<span class="inline-flex items-center gap-1 text-secondary font-medium">
+<span class="material-symbols-outlined text-[16px] text-tertiary">hourglass_top</span> Hackney Cross-Check Pending
+            </span>
+<span class="">•</span>
+<span class="inline-flex items-center gap-1 text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">build_circle</span> Calabar VIO Roadworthy
+            </span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Active Selection →</span>
+</div>
+</div>
+<!-- Candidate 2: Uche Anthony (Action Required) -->
+<div class="p-space-lg rounded-lg bg-surface-container-lowest shadow-sm hover:shadow transition-all cursor-pointer">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="relative">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm bg-surface-container" data-alt="Editorial portrait of a 35-year-old Nigerian male driver in a crisp collared shirt with natural light, studio headshot for commercial driver identification license." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdmuboyS3sUl4BYUpZz9iCXQ0qSBnsObYsV59Zc5Z2Kyhe198GMSnLyQAbp2uJJCa-jvkICnBgEEnrsv0U8shLqsCA8ay-xddTwJZ4KDAPpdHaGl-oP9twYm6T2df2YsYpi2Suo3F2yhbzJk7fsU_Jm8wR_0sSssN634jZKlgRfBG_MvK0wXa5nd2cwDm4zh--i9p6NLAERl2gC6mlSDb8_Xwpk9Y9sOmm2PDAvMvP">
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-error flex items-center justify-center text-on-error text-[12px] shadow-sm">
+<span class="material-symbols-outlined text-[12px]">priority_high</span>
+</div>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Uche Anthony</span>
+<span class="font-label-sm text-label-sm bg-surface-container text-secondary px-space-xs py-0.5 rounded">ID: RTN-7940-CR</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface font-semibold px-space-xs py-0.5 rounded">Honda Civic 2017</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-space-xs text-secondary font-body-sm text-body-sm mt-1">
+<span class="flex items-center gap-1 font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">directions_car</span>
+                  CAL-819-AK (Sedan)
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">pin_drop</span>
+                  Calabar South
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                  Applied 4h ago
+                </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md justify-between md:justify-end">
+<div class="text-right hidden sm:block">
+<div class="font-label-sm text-label-sm text-secondary">Document Integrity</div>
+<div class="font-headline-sm text-headline-sm text-error flex items-center gap-1 justify-end">
+                4 / 5 <span class="font-body-sm text-body-sm text-secondary">Valid</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                Expired Hackney Permit
+              </span>
+<span class="text-error font-label-sm text-label-sm font-medium">Risk Score: Mod (0.42)</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-low/30 -mx-space-lg -mb-space-lg px-space-lg py-space-sm">
+<div class="flex items-center gap-space-sm text-body-sm text-body-sm text-secondary">
+<span class="text-on-surface">MOT Carriage permit expired 12 days ago. Resubmission prompt ready.</span>
+</div>
+<button class="px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors">
+            Request Resubmission
+          </button>
+</div>
+</div>
+<!-- Candidate 3: Ekaette Ita (Ready for Signoff) -->
+<div class="p-space-lg rounded-lg bg-surface-container-lowest shadow-sm hover:shadow transition-all cursor-pointer">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="relative">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm bg-surface-container" data-alt="Professional identification photo of a 28-year-old Nigerian female driver wearing a dark blazer with calm poised expression against neutral studio background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm8drpmbxb2VHF0yW0erJVgVGHisNejVt1e0gvUa19NvEB4IO7UBHIJcyTwCIDIoTugOX-0fhrYLFRTWJd9l3faf0VjwlNz7pRNHoqrn04mxaMF2PEzhY0ANGMeiLwEw2AsXikzjtHTCnfaN-4YtY-zZ9aKsL-YUEBMbTmN0KS1GKQSa5dxnCZqeSrOe9Rc4Wm4rq6qtHgXQLQgRJ_3QeaRM2OwJX9_us0BGKD42jB">
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-primary flex items-center justify-center text-on-primary text-[12px] shadow-sm">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+</div>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Ekaette Ita</span>
+<span class="font-label-sm text-label-sm bg-surface-container text-secondary px-space-xs py-0.5 rounded">ID: RTN-6102-CR</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface font-semibold px-space-xs py-0.5 rounded">Corolla Quest 2019</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-space-xs text-secondary font-body-sm text-body-sm mt-1">
+<span class="flex items-center gap-1 font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">directions_car</span>
+                  CAL-492-AB (Comfort)
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">pin_drop</span>
+                  Marian Corridor
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                  Applied 6h ago
+                </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md justify-between md:justify-end">
+<div class="text-right hidden sm:block">
+<div class="font-label-sm text-label-sm text-secondary">Document Integrity</div>
+<div class="font-headline-sm text-headline-sm text-primary flex items-center gap-1 justify-end">
+                5 / 5 <span class="font-body-sm text-body-sm text-secondary">100% Clear</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-primary/15 text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">task_alt</span>
+                Ready for Final Signoff
+              </span>
+<span class="text-primary font-label-sm text-label-sm font-semibold">Risk Score: Ultra-Low (0.01)</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-low/30 -mx-space-lg -mb-space-lg px-space-lg py-space-sm">
+<div class="flex items-center gap-space-sm text-body-sm text-body-sm text-secondary">
+<span class="text-on-surface">FRSC Class E, VIO Physical Audit, and AIICO Insurance fully cross-matched.</span>
+</div>
+<button class="px-space-sm py-1 rounded bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container font-label-sm text-label-sm transition-colors">
+            Instant Signoff
+          </button>
+</div>
+</div>
+<!-- Candidate 4: Emmanuel Henshaw (Biometrics Mismatch) -->
+<div class="p-space-lg rounded-lg bg-surface-container-lowest shadow-sm hover:shadow transition-all cursor-pointer">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="relative">
+<div class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center text-secondary font-headline-sm">
+                EH
+              </div>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-error flex items-center justify-center text-on-error text-[12px] shadow-sm">
+<span class="material-symbols-outlined text-[12px]">fingerprint</span>
+</div>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Emmanuel Henshaw</span>
+<span class="font-label-sm text-label-sm bg-surface-container text-secondary px-space-xs py-0.5 rounded">ID: RTN-5519-CR</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface font-semibold px-space-xs py-0.5 rounded">Camry 2016</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-space-xs text-secondary font-body-sm text-body-sm mt-1">
+<span class="flex items-center gap-1 font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">directions_car</span>
+                  CAL-104-BB (Sedan)
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">pin_drop</span>
+                  State Housing Estate
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                  Applied 1d ago
+                </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md justify-between md:justify-end">
+<div class="text-right hidden sm:block">
+<div class="font-label-sm text-label-sm text-secondary">Document Integrity</div>
+<div class="font-headline-sm text-headline-sm text-error flex items-center gap-1 justify-end">
+                NIMC Mismatch
+              </div>
+</div>
+<div class="flex flex-col items-end gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">fingerprint</span>
+                Biometrics Mismatch
+              </span>
+<span class="text-error font-label-sm text-label-sm font-semibold">Flagged: High (0.87)</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-low/30 -mx-space-lg -mb-space-lg px-space-lg py-space-sm">
+<div class="flex items-center gap-space-sm text-body-sm text-body-sm text-secondary">
+<span class="text-error font-medium">NIMC photo confidence score 64%. Scheduled for In-Person Verification at Marian Hub.</span>
+</div>
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm transition-colors">
+            Dispatch Hub Invite
+          </button>
+</div>
+</div>
+<!-- Candidate 5: Ndifreke Asuquo (Fast-Track XL) -->
+<div class="p-space-lg rounded-lg bg-surface-container-lowest shadow-sm hover:shadow transition-all cursor-pointer">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="relative">
+<div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-headline-sm">
+                NA
+              </div>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container text-[12px] shadow-sm">
+<span class="material-symbols-outlined text-[12px]">bolt</span>
+</div>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Ndifreke Asuquo</span>
+<span class="font-label-sm text-label-sm bg-surface-container text-secondary px-space-xs py-0.5 rounded">ID: RTN-9024-CR</span>
+<span class="font-label-sm text-label-sm bg-primary/10 text-primary font-semibold px-space-xs py-0.5 rounded">Sienna XL 2018</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-space-xs text-secondary font-body-sm text-body-sm mt-1">
+<span class="flex items-center gap-1 font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">airport_shuttle</span>
+                  CAL-552-CR (XL / 7-Seater)
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">pin_drop</span>
+                  Airport / Tinapa Corridor
+                </span>
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                  Applied 35m ago
+                </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md justify-between md:justify-end">
+<div class="text-right hidden sm:block">
+<div class="font-label-sm text-label-sm text-secondary">Pre-Approved Fleet</div>
+<div class="font-headline-sm text-headline-sm text-primary flex items-center gap-1 justify-end">
+                5 / 5 <span class="font-body-sm text-body-sm text-secondary">Verified</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-primary-container/20 text-on-primary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">flash_on</span>
+                Fast-Track Approval
+              </span>
+<span class="text-primary font-label-sm text-label-sm">Partner: Tinapa Transit Co.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination / Queue Status Footer -->
+<div class="flex items-center justify-between py-space-sm px-space-xs text-secondary font-body-sm text-body-sm">
+<span class="">Showing 5 of 28 candidate applications</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high transition-colors font-label-sm text-label-sm text-on-surface">Previous</button>
+<span class="px-space-xs font-semibold text-on-surface">Page 1 of 6</span>
+<button class="px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high transition-colors font-label-sm text-label-sm text-on-surface">Next</button>
+</div>
+</div>
+</div>
+<!-- RIGHT PANEL: Detailed KYC Inspection Dossier for "Bassey Offiong" (35% width -> 5 of 12 cols) -->
+<div class="lg:col-span-5 xl:col-span-4 flex flex-col gap-space-md sticky top-24">
+<!-- Primary Dossier Card -->
+<div class="p-space-lg rounded-lg bg-surface-container-lowest shadow-md flex flex-col gap-space-lg">
+<!-- Dossier Header -->
+<div class="flex items-start justify-between pb-space-md">
+<div class="flex items-center gap-space-md">
+<img class="w-16 h-16 rounded-full object-cover shadow-sm bg-surface-container" data-alt="High-resolution verified portrait photo of Bassey Offiong for Nigerian transportation administrative badge with neutral studio lighting and crisp focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAirM6YLZSrjQBgIo-fMIaI774HHLhueI1caH_31JAsrcaYmijDGWRgDCfNKrGZ3hLjq22Gn9FC3E5uxaBTxbClULe2GexKj9fbNZ2thiY1BdHIlR5wunjHDUnbcxie05FnxORCJ8_w4Mxb8HwpNFO9XBl6Yfek9gzbR2sgLDIRjt66CK4OxdhrtoHTWeUcdbtUAt4IP_6xXG4hDQbqdpaTaY0A-vrRgfRN_f0VWSB5">
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Bassey Edet Offiong</h3>
+</div>
+<span class="font-body-sm text-body-sm text-secondary block">+234 803 491 8820</span>
+<div class="flex items-center gap-1 mt-1">
+<span class="px-space-xs py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">verified</span> NIMC Verified
+                </span>
+<span class="px-space-xs py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">account_balance</span> BVN Valid
+                </span>
+</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface px-space-xs py-1 rounded font-semibold uppercase">
+            ACTIVE REVIEW
+          </span>
+</div>
+<!-- NIN & Identity Hash Metadata Block -->
+<div class="p-space-md rounded bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-body-sm text-body-sm">
+<span class="text-secondary font-label-sm text-label-sm uppercase">NIN Identifier:</span>
+<span class="font-semibold text-on-surface tracking-wider font-mono">4920-1928-8311</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-body-sm">
+<span class="text-secondary font-label-sm text-label-sm uppercase">LASRRA / Res. ID:</span>
+<span class="font-semibold text-on-surface font-mono">CR-CAL-2024-9910</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-body-sm">
+<span class="text-secondary font-label-sm text-label-sm uppercase">Biometric Match:</span>
+<span class="text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">done_all</span> 98.4% Confidence
+            </span>
+</div>
+</div>
+<!-- Vehicle Asset Verification Section -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Registered Vehicle Asset</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Tier: ROUTENA Sedan</span>
+</div>
+<div class="p-space-md rounded bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">directions_car</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block">2018 Toyota Yaris</span>
+<span class="font-body-sm text-body-sm text-secondary">Silver Metallic • 4 Passenger Seats</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-wider font-mono block">CAL-311-AA</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Cross River Reg.</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs mt-1 text-body-sm text-body-sm">
+<div class="p-space-sm rounded bg-surface-container-low/70 flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span class="truncate">Chassis: ...882910</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low/70 flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span class="truncate">Engine: 1NZ-FE-40</span>
+</div>
+</div>
+</div>
+<!-- Interactive Document Verification Stack -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Compliance Documents (5)</span>
+<span class="font-label-sm text-label-sm text-secondary">Click to preview scan</span>
+</div>
+<!-- Doc 1: FRSC License -->
+<div class="p-space-sm rounded bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">FRSC Commercial Driver's Licence</span>
+<span class="font-body-sm text-body-sm text-secondary">Class E • Exp: Nov 2026 (Verified)</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded text-secondary hover:text-on-surface" title="Inspect scan">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+</button>
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+</div>
+</div>
+<!-- Doc 2: Hackney Carriage Permit (PENDING MOT CHECK) -->
+<div class="p-space-sm rounded bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between ring-1 ring-tertiary-container/50">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">local_police</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">CRS Hackney Carriage Permit</span>
+<span class="font-body-sm text-body-sm text-secondary">Permit #CRS-MOT-8849 • Awaiting sync</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container transition-colors" onclick="document.getElementById('inspection-modal').classList.remove('hidden')">
+                Inspect
+              </button>
+<span class="material-symbols-outlined text-tertiary text-[18px]">pending</span>
+</div>
+</div>
+<!-- Doc 3: Computerized Roadworthiness (LACVIS) -->
+<div class="p-space-sm rounded bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">fact_check</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Computerized Vehicle Inspection (VIO)</span>
+<span class="font-body-sm text-body-sm text-secondary">Roadworthiness Certificate • Valid Oct 2025</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded text-secondary hover:text-on-surface" title="Inspect scan" onclick="document.getElementById('vio-recon-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+</button>
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+</div>
+</div>
+<!-- Doc 4: Comprehensive Vehicle Insurance -->
+<div class="p-space-sm rounded bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">security</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Comprehensive Passenger Escrow Policy</span>
+<span class="font-body-sm text-body-sm text-secondary">AIICO Insurance • Policy #AI-993821</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded text-secondary hover:text-on-surface" title="Inspect scan">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+</button>
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+</div>
+</div>
+<!-- Doc 5: Physical Hub Inspection -->
+<div class="p-space-sm rounded bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">handshake</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Marian Rd Station Physical AC/Spark Audit</span>
+<span class="font-body-sm text-body-sm text-secondary">Passed by Inspector K. Duke (Today 11:30)</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<span class="px-space-xs py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">Passed</span>
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+</div>
+</div>
+</div>
+<!-- Internal Audit Note Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Internal Audit Trail Note</label>
+<textarea class="w-full p-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none resize-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary-container" placeholder="Add reviewer observations (e.g., Cross River MOT stamp cross-verified via phone query)..." rows="2">MOT receipt verified manually with Marian zonal office clerk. Hackney seal clear.</textarea>
+</div>
+<!-- Decision Workflow & Action Buttons -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Primary Action Button: Approve & Activate Driver Wallet -->
+<button class="w-full py-space-md px-space-lg rounded-full bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container font-label-lg text-label-lg flex items-center justify-center gap-space-sm shadow-md transition-all active:scale-[0.99]" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span class="">Approve &amp; Activate Driver Wallet</span>
+</button>
+<span class="font-label-sm text-label-sm text-center text-secondary -mt-1">
+            Instantly activates ₦0 onboard escrow wallet + dispatches welcome SMS to driver
+          </span>
+<div class="grid grid-cols-2 gap-space-sm mt-space-xs">
+<!-- Resubmit Button -->
+<button class="py-space-sm px-space-md rounded bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">replay</span>
+<span class="">Req. Resubmission</span>
+</button>
+<!-- Reject / Blacklist Button -->
+<button class="py-space-sm px-space-md rounded bg-error-container/60 hover:bg-error-container text-on-error-container font-label-md text-label-md flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">block</span>
+<span class="">Reject / Blacklist</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Operational Compliance & Cross River Government Integration Bar -->
+<div class="mt-space-2xl p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-lg">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Compliance Mesh</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+</div>
+<!-- Integration Item 1: NIMC -->
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">NIMC Identity Portal:</span>
+<span class="font-body-sm text-body-sm text-secondary">Online (99.4% SLA)</span>
+</div>
+<!-- Integration Item 2: Cross River MOT -->
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Cross River Ministry of Transport:</span>
+<span class="font-body-sm text-body-sm text-secondary">Live Sync Active</span>
+</div>
+<!-- Integration Item 3: FRSC Portal -->
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">FRSC National Driver Registry:</span>
+<span class="font-body-sm text-body-sm text-secondary">Verified</span>
+</div>
+<!-- Integration Item 4: Calabar Physical Hub -->
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Marian Physical Hub Capacity:</span>
+<span class="font-body-sm text-body-sm text-secondary">14 audit bays free today</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-body-sm text-body-sm text-secondary">Cross River Sector Reg: NDIC-CR-8921</span>
+<button class="px-space-md py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span class="">Run Full Ping</span>
+</button>
+</div>
+</div>
+</div></main></div>
+
+<div id="inspection-modal" class="fixed inset-0 z-50 bg-[#0b1c30]/80 backdrop-blur-md flex items-center justify-center p-space-md md:p-space-lg"><div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl shadow-2xl max-w-6xl w-full max-h-[92vh] flex flex-col overflow-hidden"><div class="px-space-lg py-space-md border-b border-outline-variant/30 bg-surface-bright flex flex-wrap items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[24px]">verified</span></div><div><div class="flex flex-wrap items-center gap-space-xs"><button onclick="document.getElementById('audit-report-modal').classList.remove('hidden')" class="px-space-sm py-1 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary border border-primary/20 font-label-md text-label-md flex items-center gap-1.5 transition-colors shadow-sm"><span class="material-symbols-outlined text-[18px]">description</span><span class="">Export Dossier (.PDF/.JSON)</span></button><h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Cross River State Hackney Carriage License &amp; Stage Carriage Permit</h2><span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">Pending Physical Audit</span></div><div class="flex flex-wrap items-center gap-space-md text-secondary font-body-sm text-body-sm mt-0.5"><span class="font-mono font-medium text-on-surface">Serial: #CRS-MOT-8849-CLB</span><span class="">•</span><span class="">Driver: <strong class="text-on-surface">Bassey Edet Offiong</strong></span><span class="">•</span><span class="px-space-xs py-0.5 rounded bg-surface-container font-mono text-on-surface text-[12px]">CAL-311-AA (Toyota Yaris 2018)</span></div></div></div><div class="flex items-center gap-space-xs"><button onclick="document.getElementById('audit-report-modal').classList.remove('hidden')" class="px-space-sm py-1 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary border border-primary/20 font-label-md text-label-md flex items-center gap-1.5 transition-colors shadow-sm"><span class="material-symbols-outlined text-[18px]">description</span><span class="">Export Dossier (.PDF/.JSON)</span></button><div class="flex items-center bg-surface-container-low rounded-lg p-0.5 border border-outline-variant/30"><button title="Zoom In" class="p-space-xs rounded hover:bg-surface-container text-on-surface transition-colors flex items-center"><span class="material-symbols-outlined text-[20px]">zoom_in</span></button><button title="Zoom Out" class="p-space-xs rounded hover:bg-surface-container text-on-surface transition-colors flex items-center"><span class="material-symbols-outlined text-[20px]">zoom_out</span></button><button title="Reset Zoom (100%)" class="px-space-xs py-0.5 font-label-sm text-label-sm text-secondary hover:text-on-surface rounded hover:bg-surface-container transition-colors">100%</button><div class="h-4 w-[1px] bg-outline-variant/40 mx-0.5"></div><button title="Rotate 90°" class="p-space-xs rounded hover:bg-surface-container text-on-surface transition-colors flex items-center"><span class="material-symbols-outlined text-[20px]">rotate_90_degrees_cw</span></button><button title="High Contrast / Invert" class="p-space-xs rounded hover:bg-surface-container text-on-surface transition-colors flex items-center"><span class="material-symbols-outlined text-[20px]">contrast</span></button></div><button onclick="document.getElementById('inspection-modal').classList.add('hidden')" class="p-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-secondary hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">close</span></button></div></div><div class="grid grid-cols-1 lg:grid-cols-12 flex-1 overflow-hidden min-h-0"><div class="lg:col-span-8 bg-[#071321] flex flex-col justify-between overflow-hidden relative border-r border-outline-variant/20"><div class="flex items-center justify-between px-space-md py-space-xs bg-inverse-surface/80 border-b border-outline-variant/10 text-inverse-on-surface/80 font-label-sm text-label-sm"><div class="flex items-center gap-space-sm"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary-fixed">center_focus_strong</span> High-Res Raster Scan (600 DPI Optical)</span><span class="">•</span><span class="text-inverse-on-surface/60">Uploaded by Marian Physical Intake</span></div><span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-semibold flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> Hologram Authenticity: Verified</span></div><div class="flex-1 p-space-lg flex items-center justify-center overflow-auto relative"><div class="relative bg-[#fcfbf7] text-[#1c1917] p-8 rounded-lg shadow-2xl border-4 border-[#334155] max-w-xl w-full min-h-[480px] font-serif select-none"><div class="absolute inset-2 border-2 border-[#94a3b8]/40 pointer-events-none rounded"></div><div class="flex items-center justify-between pb-3 border-b-2 border-[#006c49]"><div class="w-14 h-14 rounded-full bg-[#006c49]/10 border border-[#006c49]/30 flex items-center justify-center"><span class="material-symbols-outlined text-[#006c49] text-[32px]">shield</span></div><div class="text-center flex-1 px-2"><h3 class="text-[14px] font-bold tracking-wider uppercase text-[#0b1c30] font-sans">Cross River State Government of Nigeria</h3><p class="text-[12px] font-bold text-[#006c49] tracking-wide font-sans">Ministry of Transport &amp; Marine Services</p><p class="text-[10px] text-[#64748b] font-sans uppercase tracking-widest">Directorate of Inland Road Traffic &amp; Public Carriage</p></div><div class="w-14 h-14 rounded border border-amber-600/40 bg-gradient-to-tr from-amber-100 to-amber-200 flex flex-col items-center justify-center p-1 text-[8px] font-mono text-amber-900 leading-tight text-center font-sans font-bold shadow-inner"><span class="">CRS</span><span class="">MOT</span><span class="">SECURE</span></div></div><div class="my-2 px-2 py-1 bg-gradient-to-r from-emerald-800 via-teal-700 to-emerald-900 text-white rounded text-center text-[10px] tracking-widest uppercase font-mono font-bold flex items-center justify-center gap-2"><span class="material-symbols-outlined text-[12px]">lock</span> CRS GENUINE MOT SECURITY EMBLEM 2024/2025 • #CRS-MOT-8849-CLB</div><div class="mt-3 grid grid-cols-2 gap-x-4 gap-y-2 text-[11px] font-sans"><div class="border-b border-dashed border-slate-300 pb-1"><span class="text-slate-500 block text-[9px] uppercase font-bold">Registered Operator / Driver</span><strong class="text-[#0b1c30] text-[12px]">BASSEY EDET OFFIONG</strong></div><div class="border-b border-dashed border-slate-300 pb-1"><span class="text-slate-500 block text-[9px] uppercase font-bold">Vehicle Plate No / Tier</span><strong class="text-[#0b1c30] text-[12px] font-mono">CAL-311-AA (Saloon / Sedan)</strong></div><div class="border-b border-dashed border-slate-300 pb-1"><span class="text-slate-500 block text-[9px] uppercase font-bold">Engine Serial No</span><span class="font-mono font-medium text-slate-800">1NZ-FE9281-CAL</span></div><div class="border-b border-dashed border-slate-300 pb-1"><span class="text-slate-500 block text-[9px] uppercase font-bold">Chassis / VIN</span><span class="font-mono font-medium text-slate-800">JTDKN32T0J882910</span></div><div class="border-b border-dashed border-slate-300 pb-1 col-span-2"><span class="text-slate-500 block text-[9px] uppercase font-bold">Approved Operating Corridors &amp; Hubs</span><strong class="text-slate-800 text-[11px]">Calabar Municipal, Calabar South &amp; Marian Transit Axis</strong></div><div class="border-b border-dashed border-slate-300 pb-1"><span class="text-slate-500 block text-[9px] uppercase font-bold">Issue Date</span><span class="font-medium text-slate-800">19 November 2024</span></div><div class="border-b border-dashed border-slate-300 pb-1"><span class="text-slate-500 block text-[9px] uppercase font-bold">Expiration Date</span><strong class="font-semibold text-emerald-800">18 November 2025</strong></div></div><div class="mt-4 pt-2 border-t border-slate-300 flex items-end justify-between"><div class="text-left"><div class="w-24 h-10 border border-slate-300 rounded bg-slate-50 flex items-center justify-center font-mono text-[9px] text-slate-400">[Zonal QR: 8849]</div><span class="text-[9px] text-slate-500 block mt-1 font-sans">CRS Licensing Clerk: P. Esin</span></div><div class="text-center"><div class="w-20 h-20 rounded-full border-4 border-dashed border-[#ba1a1a] flex flex-col items-center justify-center text-[#ba1a1a] font-bold text-[8px] leading-tight rotate-[-12deg] p-1 shadow-sm"><span class="text-[7px]">CROSS RIVER STATE</span><span class="text-[9px] font-black">★ APPROVED ★</span><span class="text-[7px]">MARIAN ZONAL MOT</span></div><span class="text-[9px] text-slate-500 block mt-1 font-sans">Official Zonal Seal</span></div></div><div class="absolute right-8 bottom-12 w-44 h-44 rounded-full border-4 border-primary-container shadow-2xl bg-white/95 backdrop-blur flex flex-col items-center justify-center p-2 ring-4 ring-primary/20 pointer-events-none transform translate-x-2"><div class="absolute -top-3 px-2 py-0.5 rounded-full bg-primary text-white font-sans text-[10px] font-bold tracking-wider shadow">2.5x Loupe Zoom</div><div class="w-24 h-24 rounded-full border-2 border-dashed border-[#ba1a1a] flex flex-col items-center justify-center text-[#ba1a1a] font-bold text-[10px] leading-none text-center"><span class="text-[8px]">CRS MOT</span><span class="text-[11px] font-black my-0.5">★ VERIFIED ★</span><span class="text-[7px]">MARIAN 2024</span></div><div class="mt-1 text-center font-sans"><span class="text-[10px] font-bold text-primary block leading-tight flex items-center justify-center gap-1"><span class="material-symbols-outlined text-[14px]">check_circle</span> Sharp Seal</span><span class="text-[8px] text-slate-600 block">Confidence: 99.1%</span></div></div></div></div><div class="px-space-md py-space-sm bg-inverse-surface border-t border-outline-variant/20 flex items-center gap-space-sm"><span class="font-label-sm text-label-sm text-inverse-on-surface/70 uppercase tracking-wider mr-space-xs">Inspection Switcher:</span><button class="px-space-md py-1 rounded bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold flex items-center gap-1 shadow-sm"><span class="material-symbols-outlined text-[16px]">badge</span> Hackney Permit (#8849)</button><button class="px-space-md py-1 rounded bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-inverse-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" onclick="document.getElementById('inspection-modal').classList.add('hidden'); document.getElementById('vio-recon-modal').classList.remove('hidden');"><span class="material-symbols-outlined text-[16px]">fact_check</span> VIO Roadworthiness Cert</button><button class="px-space-md py-1 rounded bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-inverse-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors"><span class="material-symbols-outlined text-[16px]">id_card</span> FRSC Driver's Licence</button></div></div><div class="lg:col-span-4 bg-surface-container-lowest p-space-lg flex flex-col justify-between overflow-y-auto"><div class="flex flex-col gap-space-md"><div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/30"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Forensic Check Matrix</span><span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">verified</span> 4 of 4 Passed</span></div><div class="flex flex-col gap-space-sm"><div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px] mt-0.5">verified</span><div><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-semibold">Anti-Tamper Hologram &amp; QR</span><span class="text-[11px] font-semibold text-primary">Pass</span></div><span class="text-body-sm text-secondary block">Scanned &amp; matched with Calabar Marian physical hub register.</span></div></div><div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px] mt-0.5">verified</span><div><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-semibold">Plate &amp; Engine Matching</span><span class="text-[11px] font-semibold text-primary">100% Match</span></div><span class="text-body-sm text-secondary block">CAL-311-AA matched with Police CMRIS and Cross River VIO database.</span></div></div><div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px] mt-0.5">verified</span><div><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-semibold">Validity Period Verification</span><span class="text-[11px] font-semibold text-primary">Active (+340d)</span></div><span class="text-body-sm text-secondary block">Valid through 18 Nov 2025. Does not require renewal action.</span></div></div><div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px] mt-0.5">verified</span><div><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-semibold">Seal Ink &amp; Watermark Integrity</span><span class="text-[11px] font-semibold text-primary">Unblemished</span></div><span class="text-body-sm text-secondary block">No digital tampering, blur artifacts, or clone stamps detected.</span></div></div></div><div class="flex flex-col gap-space-xs mt-space-xs"><label class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Reviewer Audit Trail Log</label><textarea class="w-full p-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none resize-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary-container border border-outline-variant/30" rows="3">Embossed security stamp verified against Cross River MOT serial register. Physical seal legible, plate matches vehicle registration.</textarea></div></div><div class="flex flex-col gap-space-xs pt-space-md border-t border-outline-variant/30 mt-space-md"><button onclick="document.getElementById('inspection-modal').classList.add('hidden')" class="w-full py-space-sm px-space-md rounded-full bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container font-label-lg text-label-lg flex items-center justify-center gap-space-sm shadow-md transition-all active:scale-[0.99]" type="button"><span class="material-symbols-outlined text-[20px]">verified</span><span class="">Verify &amp; Approve Document</span></button><div class="grid grid-cols-2 gap-space-sm"><button onclick="document.getElementById('inspection-modal').classList.add('hidden')" class="py-space-xs px-space-sm rounded bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 transition-colors"><span class="material-symbols-outlined text-[18px] text-tertiary">flag</span><span class="">Flag for Re-Inspection</span></button><button onclick="document.getElementById('inspection-modal').classList.add('hidden')" class="py-space-xs px-space-sm rounded bg-error-container/60 hover:bg-error-container text-on-error-container font-label-md text-label-md flex items-center justify-center gap-1 transition-colors"><span class="material-symbols-outlined text-[18px]">cancel</span><span class="">Reject / Blurry Seal</span></button></div></div></div></div></div></div><div id="vio-recon-modal" class="hidden fixed inset-0 z-50 bg-[#0b1c30]/80 backdrop-blur-md flex items-center justify-center p-space-md md:p-space-lg"><div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl shadow-2xl max-w-6xl w-full max-h-[92vh] flex flex-col overflow-hidden"><div class="px-space-lg py-space-md border-b border-outline-variant/30 bg-surface-bright flex flex-wrap items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[24px]">fact_check</span></div><div><div class="flex flex-wrap items-center gap-space-xs"><h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Computerized VIO Certificate &amp; State Database Reconciliation</h2><span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> Live Dual Match</span></div><div class="flex flex-wrap items-center gap-space-md text-secondary font-body-sm text-body-sm mt-0.5"><span class="font-mono font-medium text-on-surface">Cert: #CR-VIO-2024-882190</span><span class="">•</span><span class="">Candidate: <strong class="text-on-surface">Bassey Edet Offiong</strong></span><span class="">•</span><span class="px-space-xs py-0.5 rounded bg-surface-container font-mono text-on-surface text-[12px]">CAL-311-AA (Toyota Yaris 2018)</span></div></div></div><div class="flex items-center gap-space-sm"><button onclick="document.getElementById('audit-report-modal').classList.remove('hidden')" class="px-space-sm py-1 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary border border-primary/20 font-label-md text-label-md flex items-center gap-1.5 transition-colors shadow-sm"><span class="material-symbols-outlined text-[18px]">description</span><span class="">Export Dossier</span></button><div class="flex items-center bg-surface-container-low rounded-lg p-0.5 border border-outline-variant/30" id="recon-mode-toggle"><button id="btn-recon-sidebyside" onclick="document.getElementById('vio-recon-sidebyside-view').classList.remove('hidden'); document.getElementById('vio-recon-overlay-view').classList.add('hidden'); this.className='px-space-sm py-1 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm'; document.getElementById('btn-recon-overlay').className='px-space-sm py-1 rounded text-secondary hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors';" title="Side-by-Side View" class="px-space-sm py-1 rounded text-secondary hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors"><span class="material-symbols-outlined text-[16px]">splitscreen</span> Side-by-Side</button><button id="btn-recon-overlay" onclick="document.getElementById('vio-recon-sidebyside-view').classList.add('hidden'); document.getElementById('vio-recon-overlay-view').classList.remove('hidden'); this.className='px-space-sm py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm'; document.getElementById('btn-recon-sidebyside').className='px-space-sm py-1 rounded text-secondary hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors';" title="Overlay Diff Mode" class="px-space-sm py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm"><span class="material-symbols-outlined text-[16px]">difference</span> Overlay Diff <span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span></button></div><button onclick="document.getElementById('vio-recon-modal').classList.add('hidden')" class="p-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-secondary hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">close</span></button></div></div><div class="flex-1 flex flex-col overflow-hidden min-h-0"><div id="vio-recon-sidebyside-view" class="hidden grid grid-cols-1 lg:grid-cols-12 flex-1 overflow-hidden min-h-0"><div class="lg:col-span-6 bg-[#071321] flex flex-col justify-between overflow-hidden border-r border-outline-variant/20 relative"><div class="flex items-center justify-between px-space-md py-space-xs bg-inverse-surface/80 border-b border-outline-variant/10 text-inverse-on-surface/80 font-label-sm text-label-sm"><div class="flex items-center gap-space-sm"><span class="flex items-center gap-1 font-semibold text-primary-fixed"><span class="material-symbols-outlined text-[16px]">image</span> Left Pane: Candidate Uploaded Physical Scan</span><span class="">•</span><span class="text-inverse-on-surface/60">Optical 600 DPI</span></div><span class="px-space-xs py-0.5 rounded bg-primary/20 text-primary-fixed font-mono text-[10px]">SHA256: e8f9...4b12</span></div><div class="flex-1 p-space-md md:p-space-lg flex items-center justify-center overflow-auto relative"><div class="relative bg-[#fcfbf7] text-[#1c1917] p-6 rounded-lg shadow-2xl border-4 border-[#334155] max-w-lg w-full min-h-[460px] font-sans select-none"><div class="absolute inset-2 border-2 border-[#94a3b8]/40 pointer-events-none rounded"></div><div class="flex items-center justify-between pb-2 border-b-2 border-[#006c49]"><div class="w-12 h-12 rounded-full bg-[#006c49]/10 border border-[#006c49]/30 flex items-center justify-center"><span class="material-symbols-outlined text-[#006c49] text-[28px]">directions_car</span></div><div class="text-center flex-1 px-2"><h3 class="text-[12px] font-bold tracking-wider uppercase text-[#0b1c30]">Cross River State Ministry of Transport</h3><p class="text-[11px] font-bold text-[#006c49] tracking-wide">Computerized Vehicle Inspection Services (CR-CVIS)</p><p class="text-[9px] text-[#64748b] uppercase tracking-widest">Roadworthiness &amp; Automated Safety Certificate</p></div><div class="w-12 h-12 rounded border border-[#006c49]/30 bg-primary/10 flex flex-col items-center justify-center p-1 text-[8px] font-mono text-[#006c49] leading-tight font-bold"><span class="text-[10px]">CR</span><span class="">VIO</span><span class="">PASSED</span></div></div><div class="my-2 px-2 py-1 bg-emerald-800 text-white rounded text-center text-[9px] tracking-widest uppercase font-mono font-bold flex items-center justify-center gap-1"><span class="material-symbols-outlined text-[12px]">verified</span> CERTIFICATE ID: #CR-VIO-2024-882190 • MARIAN LANE 02</div><div class="mt-2 grid grid-cols-2 gap-x-3 gap-y-1.5 text-[10px]"><div class="border-b border-dashed border-slate-300 pb-0.5"><span class="text-slate-500 block text-[8px] uppercase font-bold">Registered Owner</span><strong class="text-[#0b1c30] text-[11px]">BASSEY EDET OFFIONG</strong></div><div class="border-b border-dashed border-slate-300 pb-0.5"><span class="text-slate-500 block text-[8px] uppercase font-bold">Vehicle Plate No</span><strong class="text-[#0b1c30] text-[11px] font-mono text-primary">CAL-311-AA</strong></div><div class="border-b border-dashed border-slate-300 pb-0.5"><span class="text-slate-500 block text-[8px] uppercase font-bold">Chassis / VIN</span><span class="font-mono font-medium text-slate-800">JTDKN32U701048821</span></div><div class="border-b border-dashed border-slate-300 pb-0.5"><span class="text-slate-500 block text-[8px] uppercase font-bold">Engine Number</span><span class="font-mono font-medium text-slate-800">1NZ-FE-482019</span></div><div class="border-b border-dashed border-slate-300 pb-0.5"><span class="text-slate-500 block text-[8px] uppercase font-bold">Vehicle Model &amp; Color</span><span class="font-medium text-slate-800">2018 Toyota Yaris (Silver Metallic)</span></div><div class="border-b border-dashed border-slate-300 pb-0.5"><span class="text-slate-500 block text-[8px] uppercase font-bold">Test Validity</span><strong class="font-semibold text-emerald-800">Valid until 15 Oct 2025</strong></div></div><div class="mt-2 p-2 bg-slate-50 rounded border border-slate-200"><span class="text-slate-600 block text-[8px] uppercase font-bold mb-1">Automated Telemetry Test Benchmarks:</span><div class="grid grid-cols-2 gap-1 text-[9px]"><div class="flex items-center justify-between text-slate-700"><span class="">Brake Efficiency:</span><strong class="text-primary">78% (Min 50%)</strong></div><div class="flex items-center justify-between text-slate-700"><span class="">Suspension Balance:</span><strong class="text-primary">84% (Passed)</strong></div><div class="flex items-center justify-between text-slate-700"><span class="">Headlight Lux Align:</span><strong class="text-primary">Passed</strong></div><div class="flex items-center justify-between text-slate-700"><span class="">Exhaust CO/HC:</span><strong class="text-primary">0.18% (Clean)</strong></div></div></div><div class="mt-2 pt-2 border-t border-slate-300 flex items-center justify-between"><div class="text-left"><div class="w-24 h-8 border border-slate-300 rounded bg-white flex items-center justify-center font-mono text-[8px] text-slate-500">||| | |||| || ||||</div><span class="text-[8px] text-slate-500 block font-mono">Holo: CR-SEC-99410-X</span></div><div class="text-right"><span class="text-[8px] text-slate-500 block">Inspector: Engr. A. Bassey</span><span class="text-[9px] font-bold text-primary flex items-center justify-end gap-0.5"><span class="material-symbols-outlined text-[12px]">check_circle</span> Calabar VIO Certified</span></div></div></div></div><div class="px-space-md py-space-xs bg-inverse-surface border-t border-outline-variant/20 flex items-center justify-between text-inverse-on-surface/80 font-label-sm text-label-sm"><span class="flex items-center gap-1 text-primary-fixed"><span class="material-symbols-outlined text-[16px]">search</span> Field Highlights: Active</span><span class="text-inverse-on-surface/60">Test Center: Marian Road Computerized Lane 02</span></div></div><div class="lg:col-span-6 bg-surface-container-lowest p-space-md md:p-space-lg flex flex-col justify-between overflow-y-auto"><div class="flex flex-col gap-space-md"><div class="p-space-sm rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span><div><span class="font-label-md text-label-md text-on-surface font-semibold block">Live Sync: Cross River State VIO Central Registry</span><span class="font-body-sm text-body-sm text-secondary font-mono text-[11px]">NDIC-CR-8921 API Connected • Latency: 18ms</span></div></div><span class="px-space-xs py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold">LIVE 99.8% MATCH</span></div><div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/30"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Field-by-Field Dual Verification</span><span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">verified</span> 7 of 7 Confirmed</span></div><div class="flex flex-col gap-space-xs"><div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between"><div class="flex flex-col"><span class="text-[10px] text-secondary uppercase font-semibold">Plate Number:</span><div class="flex items-center gap-space-xs"><span class="font-mono font-bold text-on-surface text-[13px]">CAL-311-AA</span><span class="text-secondary text-[11px]">vs State DB:</span><span class="font-mono font-bold text-primary text-[13px]">CAL-311-AA</span></div></div><span class="px-space-xs py-0.5 rounded bg-primary/15 text-primary font-label-sm text-label-sm font-semibold flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px]">check</span> Match 100%</span></div><div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between"><div class="flex flex-col"><span class="text-[10px] text-secondary uppercase font-semibold">Chassis / VIN:</span><div class="flex items-center gap-space-xs"><span class="font-mono text-on-surface text-[12px]">JTDKN32U701048821</span><span class="text-secondary text-[11px]">vs State DB:</span><span class="font-mono text-primary text-[12px]">JTDKN32U701048821</span></div></div><span class="px-space-xs py-0.5 rounded bg-primary/15 text-primary font-label-sm text-label-sm font-semibold flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px]">check</span> Match 100%</span></div><div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between"><div class="flex flex-col"><span class="text-[10px] text-secondary uppercase font-semibold">Engine Number:</span><div class="flex items-center gap-space-xs"><span class="font-mono text-on-surface text-[12px]">1NZ-FE-482019</span><span class="text-secondary text-[11px]">vs State DB:</span><span class="font-mono text-primary text-[12px]">1NZ-FE-482019</span></div></div><span class="px-space-xs py-0.5 rounded bg-primary/15 text-primary font-label-sm text-label-sm font-semibold flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px]">check</span> Match 100%</span></div><div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between"><div class="flex flex-col"><span class="text-[10px] text-secondary uppercase font-semibold">Registered Owner:</span><div class="flex items-center gap-space-xs"><span class="font-semibold text-on-surface text-[12px]">Bassey Edet Offiong</span><span class="text-secondary text-[11px]">vs State DB:</span><span class="font-semibold text-primary text-[12px]">Bassey Edet Offiong</span></div></div><span class="px-space-xs py-0.5 rounded bg-primary/15 text-primary font-label-sm text-label-sm font-semibold flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px]">check</span> Match 100%</span></div><div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between"><div class="flex flex-col"><span class="text-[10px] text-secondary uppercase font-semibold">Inspection Validity:</span><div class="flex items-center gap-space-xs"><span class="text-on-surface text-[12px]">Exp: 15 Oct 2025</span><span class="text-secondary text-[11px]">vs State DB:</span><span class="text-primary font-semibold text-[12px]">Active / In Good Standing</span></div></div><span class="px-space-xs py-0.5 rounded bg-primary/15 text-primary font-label-sm text-label-sm font-semibold flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px]">check</span> In Force</span></div></div><div class="flex flex-col gap-space-xs pt-space-md border-t border-outline-variant/30 mt-space-md"><button onclick="document.getElementById('vio-recon-modal').classList.add('hidden')" class="w-full py-space-sm px-space-md rounded-full bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container font-label-lg text-label-lg flex items-center justify-center gap-space-sm shadow-md transition-all active:scale-[0.99]" type="button"><span class="material-symbols-outlined text-[20px]">verified_user</span><span class="">Approve &amp; Validate VIO Match</span></button></div></div></div></div><div id="vio-recon-overlay-view" class="grid grid-cols-1 lg:grid-cols-12 flex-1 overflow-hidden min-h-0"><div class="lg:col-span-8 bg-[#071321] flex flex-col justify-between overflow-hidden relative border-r border-outline-variant/20"><div class="flex flex-wrap items-center justify-between px-space-md py-space-xs bg-inverse-surface/80 border-b border-outline-variant/10 text-inverse-on-surface font-label-sm text-label-sm gap-space-sm"><div class="flex items-center gap-space-sm"><span class="flex items-center gap-1 font-semibold text-primary-fixed"><span class="material-symbols-outlined text-[16px]">layers</span> Superimposed Forensic Diff Engine</span><span class="">•</span><span class="text-inverse-on-surface/75">Optical 600 DPI vs Vector Cryptographic Master</span></div><div class="flex items-center gap-space-sm"><span class="px-space-xs py-0.5 rounded bg-primary/20 text-primary-fixed border border-primary/30 font-mono text-[11px] flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> Δ: 0.00mm Exact Alignment</span><span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold text-[10px]">99.8% FIT</span></div></div><div class="px-space-md py-space-xs bg-[#0b1c30] border-b border-outline-variant/20 flex flex-wrap items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm flex-1 min-w-[280px]"><span class="font-label-sm text-label-sm text-inverse-on-surface/80 uppercase font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary-fixed">tune</span> Blend Opacity:</span><span class="text-[11px] text-primary-fixed font-mono font-bold" id="blend-label">50% (Master Superimposed)</span><input id="diff-blend-slider" type="range" min="0" max="100" value="50" oninput="const v = this.value; document.getElementById('blend-label').innerText = v + '% (' + (v &lt; 30 ? 'Physical Scan Dominant' : (v &gt; 70 ? 'State Template Dominant' : 'Balanced Superimposition')) + ')'; document.getElementById('diff-overlay-layer').style.opacity = v / 100;" class="flex-1 h-1.5 bg-inverse-surface rounded-lg appearance-none cursor-pointer accent-[#10b981]"></div><div class="flex items-center gap-space-xs"><button id="btn-toggle-curtain" onclick="const overlay = document.getElementById('diff-overlay-layer'); overlay.classList.toggle('curtain-mode'); this.classList.toggle('bg-primary-container'); this.classList.toggle('text-on-primary-container');" class="px-space-xs py-1 rounded bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors"><span class="material-symbols-outlined text-[15px]">vertical_split</span> Curtained Wipe</button><button id="btn-invert-diff" onclick="const grid = document.getElementById('diff-viewport-canvas'); grid.classList.toggle('diff-inverted'); this.classList.toggle('bg-error-container'); this.classList.toggle('text-on-error-container');" class="px-space-xs py-1 rounded bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors"><span class="material-symbols-outlined text-[15px]">invert_colors</span> Invert Diff Map</button><button onclick="const l = document.getElementById('holo-crosshair'); l.classList.remove('animate-ping'); void l.offsetWidth; l.classList.add('animate-ping');" class="px-space-xs py-1 rounded bg-primary/20 hover:bg-primary/30 text-primary-fixed font-label-sm text-label-sm flex items-center gap-1 transition-colors"><span class="material-symbols-outlined text-[15px]">center_focus_strong</span> Auto-Calibrate (X:142.4 Y:88.2)</button></div></div><div class="flex-1 p-space-md md:p-space-lg flex items-center justify-center overflow-auto relative"><div id="diff-viewport-canvas" class="relative bg-[#fcfbf7] text-[#1c1917] p-6 rounded-lg shadow-2xl border-4 border-[#334155] max-w-lg w-full min-h-[460px] font-sans select-none overflow-hidden"><div class="absolute inset-0 bg-[#006c49]/5 pointer-events-none z-10"></div><div class="absolute inset-2 border-2 border-emerald-800/40 pointer-events-none rounded z-10"></div><div class="relative z-0"><div class="flex items-center justify-between pb-2 border-b-2 border-[#006c49]"><div class="w-12 h-12 rounded-full bg-[#006c49]/10 border border-[#006c49]/30 flex items-center justify-center"><span class="material-symbols-outlined text-[#006c49] text-[28px]">directions_car</span></div><div class="text-center flex-1 px-2"><h3 class="text-[12px] font-bold tracking-wider uppercase text-[#0b1c30]">Cross River State Ministry of Transport</h3><p class="text-[11px] font-bold text-[#006c49] tracking-wide">Computerized Vehicle Inspection Services (CR-CVIS)</p><p class="text-[9px] text-[#64748b] uppercase tracking-widest">Roadworthiness &amp; Automated Safety Certificate</p></div><div class="w-12 h-12 rounded border border-[#006c49]/30 bg-primary/10 flex flex-col items-center justify-center p-1 text-[8px] font-mono text-[#006c49] leading-tight font-bold"><span class="text-[10px]">CR</span><span class="">VIO</span><span class="">PASSED</span></div></div><div class="my-2 px-2 py-1 bg-emerald-800 text-white rounded text-center text-[9px] tracking-widest uppercase font-mono font-bold flex items-center justify-center gap-1"><span class="material-symbols-outlined text-[12px]">verified</span> CERTIFICATE ID: #CR-VIO-2024-882190 • MARIAN LANE 02</div><div class="mt-2 grid grid-cols-2 gap-x-3 gap-y-1.5 text-[10px]"><div class="border-b border-dashed border-slate-300 pb-0.5"><span class="text-slate-500 block text-[8px] uppercase font-bold">Registered Owner</span><strong class="text-[#0b1c30] text-[11px]">BASSEY EDET OFFIONG</strong></div><div class="border-b border-dashed border-slate-300 pb-0.5"><span class="text-slate-500 block text-[8px] uppercase font-bold">Vehicle Plate No</span><strong class="text-[#0b1c30] text-[11px] font-mono text-primary">CAL-311-AA</strong></div><div class="border-b border-dashed border-slate-300 pb-0.5"><span class="text-slate-500 block text-[8px] uppercase font-bold">Chassis / VIN</span><span class="font-mono font-medium text-slate-800">JTDKN32U701048821</span></div><div class="border-b border-dashed border-slate-300 pb-0.5"><span class="text-slate-500 block text-[8px] uppercase font-bold">Engine Number</span><span class="font-mono font-medium text-slate-800">1NZ-FE-482019</span></div><div class="border-b border-dashed border-slate-300 pb-0.5"><span class="text-slate-500 block text-[8px] uppercase font-bold">Vehicle Model &amp; Color</span><span class="font-medium text-slate-800">2018 Toyota Yaris (Silver Metallic)</span></div><div class="border-b border-dashed border-slate-300 pb-0.5"><span class="text-slate-500 block text-[8px] uppercase font-bold">Test Validity</span><strong class="font-semibold text-emerald-800">Valid until 15 Oct 2025</strong></div></div><div class="mt-2 p-2 bg-slate-50 rounded border border-slate-200"><span class="text-slate-600 block text-[8px] uppercase font-bold mb-1">Automated Telemetry Test Benchmarks:</span><div class="grid grid-cols-2 gap-1 text-[9px]"><div class="flex items-center justify-between text-slate-700"><span class="">Brake Efficiency:</span><strong class="text-primary">78% (Min 50%)</strong></div><div class="flex items-center justify-between text-slate-700"><span class="">Suspension Balance:</span><strong class="text-primary">84% (Passed)</strong></div><div class="flex items-center justify-between text-slate-700"><span class="">Headlight Lux Align:</span><strong class="text-primary">Passed</strong></div><div class="flex items-center justify-between text-slate-700"><span class="">Exhaust CO/HC:</span><strong class="text-primary">0.18% (Clean)</strong></div></div></div><div class="mt-2 pt-2 border-t border-slate-300 flex items-center justify-between"><div class="text-left"><div class="w-24 h-8 border border-slate-300 rounded bg-white flex items-center justify-center font-mono text-[8px] text-slate-500">||| | |||| || ||||</div><span class="text-[8px] text-slate-500 block font-mono">Holo: CR-SEC-99410-X</span></div><div class="text-right"><span class="text-[8px] text-slate-500 block">Inspector: Engr. A. Bassey</span><span class="text-[9px] font-bold text-primary flex items-center justify-end gap-0.5"><span class="material-symbols-outlined text-[12px]">check_circle</span> Calabar VIO Certified</span></div></div></div><div id="diff-overlay-layer" style="opacity: 0.5;" class="absolute inset-0 p-6 pointer-events-none z-20 transition-opacity"><div class="absolute top-3 left-4 px-2 py-0.5 rounded bg-primary text-white font-mono text-[9px] font-bold shadow flex items-center gap-1"><span class="material-symbols-outlined text-[11px]">verified</span> Master Cryptographic Watermark Superimposed</div><div class="absolute left-1/3 top-1/4 w-32 h-6 border-2 border-primary-container bg-primary-container/20 rounded flex items-center justify-end px-1"><span class="text-[7px] font-mono text-primary font-bold bg-white/90 px-1 rounded shadow-sm">0% Δ VIN MATCH</span></div><div class="absolute left-1/3 top-1/3 w-32 h-6 border-2 border-primary-container bg-primary-container/20 rounded flex items-center justify-end px-1"><span class="text-[7px] font-mono text-primary font-bold bg-white/90 px-1 rounded shadow-sm">0% Δ ENG MATCH</span></div><div class="absolute right-8 top-12 w-28 h-7 border-2 border-primary-container bg-primary-container/20 rounded flex items-center justify-end px-1"><span class="text-[7px] font-mono text-primary font-bold bg-white/90 px-1 rounded shadow-sm">0% Δ PLATE</span></div></div><div class="absolute right-4 bottom-6 w-44 h-44 rounded-full border-4 border-primary-container shadow-2xl bg-[#0b1c30]/95 text-white backdrop-blur flex flex-col items-center justify-center p-2 ring-4 ring-primary/30 z-30 pointer-events-none"><div class="absolute -top-3 px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-sans text-[9px] font-bold tracking-wider shadow flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px]">fingerprint</span> Holographic Watermark Alignment</div><div id="holo-crosshair" class="relative w-24 h-24 rounded-full border-2 border-dashed border-primary-fixed flex flex-col items-center justify-center text-primary-fixed font-mono text-[8px] leading-tight text-center bg-gradient-to-tr from-primary/30 via-emerald-800/40 to-teal-700/30"><div class="absolute inset-0 flex items-center justify-center"><div class="w-full h-[1px] bg-primary-container/60"></div><div class="h-full w-[1px] bg-primary-container/60 absolute"></div></div><div class="relative z-10"><span class="text-[7px] font-bold block text-white">CRS MOT SECURE</span><span class="text-[10px] font-black my-0.5 block text-primary-fixed">★ 100% ★</span><span class="text-[7px] font-mono block text-white/90">X:142.4 Y:88.2</span></div><div class="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-primary-container ring-2 ring-white animate-ping"></div></div><div class="mt-1 text-center font-sans"><span class="text-[9px] font-bold text-primary-fixed block leading-tight flex items-center justify-center gap-0.5"><span class="material-symbols-outlined text-[11px]">lock</span> Δ: 0.02mm Tolerance</span><span class="text-[8px] text-inverse-on-surface/70 block">Micro-text: CRS-MOT-OFFICIAL-2024</span></div></div></div></div><div class="px-space-md py-space-xs bg-inverse-surface border-t border-outline-variant/20 flex flex-wrap items-center justify-between text-inverse-on-surface/80 font-label-sm text-label-sm"><div class="flex items-center gap-space-sm"><span class="flex items-center gap-1 text-primary-fixed"><span class="material-symbols-outlined text-[16px]">filter_center_focus</span> Spectral Interference: Clean</span><span class="">•</span><span class="text-inverse-on-surface/70">Optical Loupe: 1200 DPI Micro-print Verified</span></div><span class="font-mono text-[11px] text-primary-fixed font-bold">Congruence: 99.8% | Reflectance: 99.4%</span></div></div><div class="lg:col-span-4 bg-surface-container-lowest p-space-md md:p-space-lg flex flex-col justify-between overflow-y-auto"><div class="flex flex-col gap-space-md"><div class="p-space-sm rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span><div><span class="font-label-md text-label-md text-on-surface font-semibold block">Hologram &amp; Stamp Forensic Match</span><span class="font-body-sm text-body-sm text-secondary font-mono text-[11px]">Vector Diff Engine: 0 Structural Errors</span></div></div><span class="px-space-xs py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold">100% AUTHENTIC</span></div><div class="p-space-sm rounded-lg bg-surface-container-low border border-outline-variant/20 flex flex-col gap-space-xs"><span class="text-secondary font-label-sm text-label-sm uppercase font-semibold tracking-wider">Forensic Telemetry Readout</span><div class="grid grid-cols-2 gap-space-xs text-[11px]"><div class="p-1.5 rounded bg-surface-container-lowest"><span class="text-secondary block text-[10px]">Watermark Refractive Index:</span><strong class="text-primary font-mono">1.54 ± 0.01 (Valid)</strong></div><div class="p-1.5 rounded bg-surface-container-lowest"><span class="text-secondary block text-[10px]">Micro-print Resolution:</span><strong class="text-primary font-mono">1200 DPI Matched</strong></div><div class="p-1.5 rounded bg-surface-container-lowest"><span class="text-secondary block text-[10px]">Guilloché Waves:</span><strong class="text-primary font-mono">Continuous</strong></div><div class="p-1.5 rounded bg-surface-container-lowest"><span class="text-secondary block text-[10px]">Stamp Emboss Depth:</span><strong class="text-primary font-mono">0.34mm (Normal)</strong></div></div></div><div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/30"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Pixel &amp; Vector Diff Zones</span><span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">verified</span> 5 of 5 Verified</span></div><div class="flex flex-col gap-space-xs"><div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between"><div><span class="font-semibold text-on-surface text-[12px] block">Plate Number (CAL-311-AA)</span><span class="text-secondary text-[10px]">Zero contour displacement detected</span></div><span class="px-space-xs py-0.5 rounded bg-primary/15 text-primary font-mono font-bold text-[11px]">0% Δ Match</span></div><div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between"><div><span class="font-semibold text-on-surface text-[12px] block">VIN (JTDKN32U701048821)</span><span class="text-secondary text-[10px]">Geometric font kerning match 100%</span></div><span class="px-space-xs py-0.5 rounded bg-primary/15 text-primary font-mono font-bold text-[11px]">0% Δ Match</span></div><div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between"><div><span class="font-semibold text-on-surface text-[12px] block">Engine No (1NZ-FE-482019)</span><span class="text-secondary text-[10px]">Sub-pixel baseline parity</span></div><span class="px-space-xs py-0.5 rounded bg-primary/15 text-primary font-mono font-bold text-[11px]">0% Δ Match</span></div><div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between"><div><span class="font-semibold text-on-surface text-[12px] block">Ministry Holographic Rosette</span><span class="text-secondary text-[10px]">Interference shimmer fringes intact</span></div><span class="px-space-xs py-0.5 rounded bg-primary/15 text-primary font-mono font-bold text-[11px]">99.8% Congruent</span></div><div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between"><div><span class="font-semibold text-on-surface text-[12px] block">Brake Telemetry 78% Seal</span><span class="text-secondary text-[10px]">Calabar Lane 02 cryptostamp verified</span></div><span class="px-space-xs py-0.5 rounded bg-primary/15 text-primary font-mono font-bold text-[11px]">0% Δ Match</span></div></div><div class="flex flex-col gap-space-xs"><label class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Superimposition Reviewer Note</label><textarea class="w-full p-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none resize-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary-container border border-outline-variant/30" rows="2">Superimposed diff confirms zero discrepancy with Cross River State digital vector master. Hologram rosette micro-printing verified under 1200 DPI simulation.</textarea></div></div><div class="flex flex-col gap-space-xs pt-space-md border-t border-outline-variant/30 mt-space-md"><button onclick="document.getElementById('vio-recon-modal').classList.add('hidden')" class="w-full py-space-sm px-space-md rounded-full bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container font-label-lg text-label-lg flex items-center justify-center gap-space-sm shadow-md transition-all active:scale-[0.99]" type="button"><span class="material-symbols-outlined text-[20px]">verified_user</span><span class="">Approve &amp; Validate VIO Match</span></button><div class="grid grid-cols-2 gap-space-sm"><button class="py-space-xs px-space-sm rounded bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 transition-colors" type="button"><span class="material-symbols-outlined text-[18px] text-primary">sync</span><span class="">Query State Registry</span></button><button onclick="document.getElementById('vio-recon-modal').classList.add('hidden')" class="py-space-xs px-space-sm rounded bg-surface-container hover:bg-surface-container-high text-secondary hover:text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">arrow_back</span><span class="">Close / Back to Queue</span></button></div></div></div></div></div></div></div><div id="audit-report-modal" class="hidden fixed inset-0 z-50 bg-[#0b1c30]/80 backdrop-blur-md flex items-center justify-center p-space-md md:p-space-lg"><div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl shadow-2xl max-w-5xl w-full max-h-[92vh] flex flex-col overflow-hidden"><div class="px-space-lg py-space-md border-b border-outline-variant/30 bg-surface-bright flex flex-wrap items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[22px]">verified</span></div><div><div class="flex flex-wrap items-center gap-space-xs"><h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Forensic Verification Dossier &amp; Cryptographic Certificate</h2><span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>Tamper-Evident Signed</span></div><div class="flex flex-wrap items-center gap-space-md text-secondary font-body-sm text-body-sm mt-0.5"><span class="font-mono font-medium text-on-surface">Audit ID: #ROUTENA-AUDIT-2024-8849-CR</span><span class="">•</span><span class="">Standard: ISO 19005-1 (PDF/A compliant)</span><span class="">•</span><span class="">WAT 14:42:08 (UTC+1)</span></div></div></div><div class="flex items-center gap-space-xs"><button onclick="window.print()" title="Print Audit Certificate" class="px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors"><span class="material-symbols-outlined text-[18px]">print</span><span class="">Print</span></button><button onclick="document.getElementById('audit-report-modal').classList.add('hidden')" class="p-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-secondary hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">close</span></button></div></div><div class="flex-1 overflow-y-auto p-space-lg flex flex-col gap-space-lg bg-[#fcfbf7]/40"><div class="p-space-lg rounded-xl bg-surface-container-lowest border-2 border-outline-variant/30 shadow-sm flex flex-col gap-space-md"><div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-md border-b-2 border-primary/20"><div class="flex items-center gap-space-md"><div class="w-14 h-14 rounded-lg bg-[#006c49]/10 border border-[#006c49]/30 flex items-center justify-center"><span class="material-symbols-outlined text-[#006c49] text-[32px]">shield</span></div><div><div class="flex items-center gap-space-xs"><span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">Joint Regulatory Certification</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span class="font-label-sm text-label-sm text-secondary font-mono">CRS-MOT/NDIC-8921</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-serif">Cross River State Ministry of Transport &amp; Routena Mobility Command</h3><p class="font-body-sm text-body-sm text-secondary">Computerized Identity Verification, Hackney Carriage Audit &amp; Mechanical Roadworthiness Registry</p></div></div><div class="p-space-sm rounded-lg bg-surface-container-low border border-outline-variant/20 flex flex-col gap-0.5 text-right md:min-w-[200px]"><span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Report Authentication</span><span class="font-mono font-bold text-primary text-[13px]">PASS • VERIFIED TIER-1</span><span class="font-label-sm text-label-sm text-secondary">Cross River Node: Marian Hub</span></div></div><div class="grid grid-cols-1 md:grid-cols-2 gap-space-md"><div class="p-space-md rounded-lg bg-surface-container-low border border-outline-variant/20 flex flex-col gap-space-xs"><div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/20"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Candidate Identification</span><span class="px-space-xs py-0.5 rounded bg-primary/15 text-primary font-label-sm text-label-sm font-semibold">NIMC Verified</span></div><div class="grid grid-cols-2 gap-x-2 gap-y-1 text-body-sm text-body-sm mt-1"><span class="text-secondary">Legal Full Name:</span><strong class="text-on-surface">Bassey Edet Offiong</strong><span class="text-secondary">National Identity (NIN):</span><span class="font-mono text-on-surface font-semibold">2948-****-1029</span><span class="text-secondary">Platform Driver ID:</span><span class="font-mono text-on-surface">RTN-8821-CR</span><span class="text-secondary">FRSC License Class:</span><span class="font-semibold text-on-surface">Class E (Commercial)</span><span class="text-secondary">Licence Expiration:</span><span class="font-mono text-emerald-800 font-semibold">18 Nov 2026</span><span class="text-secondary">Biometric Confidence:</span><span class="text-primary font-bold">98.4% Match</span></div></div><div class="p-space-md rounded-lg bg-surface-container-low border border-outline-variant/20 flex flex-col gap-space-xs"><div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/20"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Registered Vehicle Telemetry</span><span class="px-space-xs py-0.5 rounded bg-primary/15 text-primary font-label-sm text-label-sm font-semibold">VIO Approved</span></div><div class="grid grid-cols-2 gap-x-2 gap-y-1 text-body-sm text-body-sm mt-1"><span class="text-secondary">Vehicle Registration:</span><strong class="font-mono text-primary font-bold text-[13px]">CAL-311-AA</strong><span class="text-secondary">Make / Model / Year:</span><span class="text-on-surface font-semibold">2018 Toyota Yaris</span><span class="text-secondary">Chassis / VIN:</span><span class="font-mono text-on-surface font-medium text-[11px]">JTDKN32U701048821</span><span class="text-secondary">Engine Serial:</span><span class="font-mono text-on-surface font-medium text-[11px]">1NZ-FE-482019</span><span class="text-secondary">Hackney Permit:</span><span class="font-mono text-on-surface">#CRS-MOT-8849-CLB</span><span class="text-secondary">Permit Status:</span><span class="text-emerald-800 font-bold">Active (Valid to 18 Nov 2025)</span></div></div></div><div class="flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Automated Forensic Ledger &amp; Optical Diff Benchmarks</span><span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">task_alt</span>5 of 5 Core Benchmarks Passed</span></div><div class="border border-outline-variant/30 rounded-lg overflow-hidden"><div class="grid grid-cols-12 bg-surface-container px-space-md py-space-xs font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider"><div class="col-span-5">Forensic Verification Check</div><div class="col-span-3">Observed Telemetry</div><div class="col-span-2 text-center">Tolerance / Standard</div><div class="col-span-2 text-right">Integrity Status</div></div><div class="divide-y divide-outline-variant/20 bg-surface-container-lowest font-body-sm text-body-sm"><div class="grid grid-cols-12 px-space-md py-space-xs items-center"><div class="col-span-5 flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">verified</span><div><strong class="text-on-surface block">State VIO Central Registry Parity</strong><span class="text-[11px] text-secondary">NDIC-CR-8921 real-time API sync</span></div></div><div class="col-span-3 font-mono text-[12px] text-on-surface">99.8% Congruence (18ms)</div><div class="col-span-2 text-center font-mono text-[11px] text-secondary">&gt;98.0%</div><div class="col-span-2 text-right"><span class="px-space-xs py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">PASSED</span></div></div><div class="grid grid-cols-12 px-space-md py-space-xs items-center"><div class="col-span-5 flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">verified</span><div><strong class="text-on-surface block">Holographic Rosette Refractive Index</strong><span class="text-[11px] text-secondary">Interference fringe refraction analysis</span></div></div><div class="col-span-3 font-mono text-[12px] text-on-surface">1.54 ± 0.01 index</div><div class="col-span-2 text-center font-mono text-[11px] text-secondary">1.53 - 1.56</div><div class="col-span-2 text-right"><span class="px-space-xs py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">PASSED</span></div></div><div class="grid grid-cols-12 px-space-md py-space-xs items-center"><div class="col-span-5 flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">verified</span><div><strong class="text-on-surface block">Guilloché Waves &amp; Micro-print</strong><span class="text-[11px] text-secondary">1200 DPI continuous vector evaluation</span></div></div><div class="col-span-3 font-mono text-[12px] text-on-surface">Continuous (0 splicing)</div><div class="col-span-2 text-center font-mono text-[11px] text-secondary">Zero Cut Artifacts</div><div class="col-span-2 text-right"><span class="px-space-xs py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">PASSED</span></div></div><div class="grid grid-cols-12 px-space-md py-space-xs items-center"><div class="col-span-5 flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">verified</span><div><strong class="text-on-surface block">Optical Loupe Stamp Emboss Depth</strong><span class="text-[11px] text-secondary">Marian Zonal MOT physical seal depth</span></div></div><div class="col-span-3 font-mono text-[12px] text-on-surface">0.34mm verified</div><div class="col-span-2 text-center font-mono text-[11px] text-secondary">0.25 - 0.45mm</div><div class="col-span-2 text-right"><span class="px-space-xs py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">PASSED</span></div></div><div class="grid grid-cols-12 px-space-md py-space-xs items-center"><div class="col-span-5 flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">verified</span><div><strong class="text-on-surface block">Brake Efficiency &amp; Telemetry Seal</strong><span class="text-[11px] text-secondary">Automated bench dynamometer lane 02</span></div></div><div class="col-span-3 font-mono text-[12px] text-on-surface">78% (Minimum 50%)</div><div class="col-span-2 text-center font-mono text-[11px] text-secondary">&gt;=50%</div><div class="col-span-2 text-right"><span class="px-space-xs py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">PASSED</span></div></div></div></div></div><div class="p-space-md rounded-lg bg-surface-container-low border border-outline-variant/30 flex flex-col gap-space-sm"><div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/20"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Cryptographic Signatures &amp; Hash Verification</span><span class="font-label-sm text-label-sm text-primary font-mono font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">lock</span>SHA-256 Validated</span></div><div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center"><div class="md:col-span-9 flex flex-col gap-1.5 font-mono text-body-sm text-body-sm"><div class="flex flex-col sm:flex-row sm:items-center gap-1 text-[11px]"><span class="text-secondary uppercase font-sans font-semibold">SHA-256 Hash:</span><span class="bg-surface-container-lowest px-2 py-0.5 rounded border border-outline-variant/30 text-on-surface break-all">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span></div><div class="flex flex-col sm:flex-row sm:items-center gap-1 text-[11px]"><span class="text-secondary uppercase font-sans font-semibold">State Public Key:</span><span class="bg-surface-container-lowest px-2 py-0.5 rounded border border-outline-variant/30 text-on-surface">RSA-4096: 4f:9a:12:bc:88:e1:3a:70:4d:bb:91:c2:55:10:e7:aa</span></div><div class="flex flex-wrap items-center gap-space-md text-[11px] text-secondary font-sans mt-0.5"><span class="">Signer: <strong class="text-on-surface">Nseobong E. (Compliance Officer #CR-4402)</strong></span><span class="">Timestamp: <strong class="text-on-surface">2024-11-19 14:42:08 WAT</strong></span><span class="">Authority: <strong class="text-primary">Akanno Tech Labs Ltd</strong></span></div></div><div class="md:col-span-3 flex flex-col items-center justify-center p-2 rounded bg-surface-container-lowest border border-outline-variant/30 text-center"><div class="w-20 h-20 bg-slate-50 border border-slate-300 rounded flex flex-col items-center justify-center font-mono text-[9px] text-slate-500 shadow-inner"><span class="material-symbols-outlined text-[32px] text-primary">qr_code_2</span><span class="text-[8px]">CR-AUDIT-8849</span></div><span class="font-label-sm text-label-sm text-secondary mt-1 font-mono text-[9px]">audit.routena.ng/verify</span></div></div></div></div></div><div class="px-space-lg py-space-md border-t border-outline-variant/30 bg-surface-container-low flex flex-wrap items-center justify-between gap-space-md"><div class="flex items-center gap-space-xs text-secondary font-body-sm text-body-sm"><span class="material-symbols-outlined text-primary text-[18px]">verified_user</span><span class="">Legally binding electronic signature under Cross River State Transport Regulations 2024.</span></div><div class="flex flex-wrap items-center gap-space-sm"><button onclick="alert('Exporting ISO 19005-1 compliant PDF audit certificate with digital signatures...');" class="px-space-md py-space-sm rounded-full bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container font-label-md text-label-md flex items-center gap-1.5 transition-all shadow-sm active:scale-[0.99]"><span class="material-symbols-outlined text-[18px]">picture_as_pdf</span><span class="">Download Digitally Signed PDF</span></button><button onclick="alert('Exporting signed JSON cryptographic bundle (SHA256 telemetry + signatures)...');" class="px-space-md py-space-sm rounded-full bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors"><span class="material-symbols-outlined text-[18px]">data_object</span><span class="">Download JSON Bundle</span></button><button onclick="alert('Audit ledger record transmitted to Cross River Ministry of Transport central archive.');" class="px-space-md py-space-sm rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors"><span class="material-symbols-outlined text-[18px]">send</span><span class="">Transmit to State Archive</span></button><button onclick="document.getElementById('audit-report-modal').classList.add('hidden')" class="px-space-md py-space-sm rounded-full bg-surface-container-low hover:bg-surface-container text-secondary hover:text-on-surface font-label-md text-label-md transition-colors">Close</button></div></div></div></div></body></html>

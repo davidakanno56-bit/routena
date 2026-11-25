@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error-container": "#93000a", "on-surface-variant": "#3c4a42", "inverse-primary": "#4edea3", "on-primary-container": "#00422b", "primary": "#006c49", "tertiary": "#446900", "surface-variant": "#d3e4fe", "secondary": "#585e6f", "tertiary-fixed-dim": "#98da27", "on-primary": "#ffffff", "on-secondary-fixed-variant": "#404757", "secondary-container": "#d9dff4", "tertiary-container": "#78b300", "outline": "#6c7a71", "surface-container-highest": "#d3e4fe", "primary-fixed": "#6ffbbe", "on-surface": "#0b1c30", "primary-fixed-dim": "#4edea3", "on-tertiary-container": "#283f00", "on-primary-fixed": "#002113", "primary-container": "#10b981", "on-secondary-container": "#5c6274", "surface-container": "#e5eeff", "error": "#ba1a1a", "on-primary-fixed-variant": "#005236", "surface-bright": "#f8f9ff", "inverse-on-surface": "#eaf1ff", "on-secondary": "#ffffff", "tertiary-fixed": "#b2f746", "outline-variant": "#bbcabf", "secondary-fixed-dim": "#c0c6da", "on-tertiary-fixed-variant": "#334f00", "surface-tint": "#006c49", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#121f00", "on-tertiary": "#ffffff", "surface-container-low": "#eff4ff", "surface-dim": "#cbdbf5", "on-error": "#ffffff", "on-background": "#0b1c30", "error-container": "#ffdad6", "secondary-fixed": "#dce2f6", "inverse-surface": "#213145", "background": "#f8f9ff", "on-secondary-fixed": "#151b2a", "surface-container-high": "#dce9ff", "surface": "#f8f9ff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "gutter-md": "1.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xl": "2rem", "space-xs": "0.25rem", "margin-md": "1.5rem", "margin": "1rem", "gutter-lg": "2rem", "gutter": "1rem", "margin-lg": "3rem", "space-2xl": "3rem", "space-md": "1rem" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "currency-display": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Inter"] }, "fontSize": { "headline-lg": ["30px", { "lineHeight": "38px", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "800" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "currency-display": ["28px", { "lineHeight": "34px", "fontWeight": "800" }], "headline-xl": ["40px", { "lineHeight": "48px", "fontWeight": "800" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><img alt="ROUTENA Wordmark &amp; Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WyHB3p59YCLXxtT1iFVSaLh7CZkBlVL3vDNg9YU65HQA9sfVWKpO0FesXZgkvSeQM6sOvvoAW-OtPwFV-D9wXacMBt7vbJojJjRusaj1ygqPd71VvsncvvrCACQHI_K1fVQUfjTL6H-sj1ffQeSE3Am65SKBWWiB2iitoqniovJL_v0FjQ8GsGI1Ndj7N2Q9SKEjoU_UVqlEZQVFYepnFOBvhktPpDAA1iO-OL0qvoTg"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold hidden sm:inline">ROUTENA</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-low shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><span class="flex h-2 w-2 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span><span class="font-label-sm text-label-sm text-on-surface-variant font-semibold tracking-tight whitespace-nowrap">⛽ Calabar ₦780/L</span></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:scale-95 transition-all"><span class="material-symbols-outlined text-[22px]">notifications</span></button><a class="w-11 h-11 flex items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-primary-container" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVnwgwQJ9zxFBOU10PonHxZLq1vm7-XGZexAMCP4ySkU4a7sB7wmiAzn4HvCwEFKJmMKp7mzjpXtoBLAIE3GIwsWs1lnRMEkVWv5_1O4qHUc8YLjhUpfIV9ZSCM7S96czt4AYOIb--dFBJ0I50iWB1U5p1dpSs_piqqyLpIW77ZXXMkKt3U9ehlP-bOgTHfkufBYTXJH2BImdxfrD81Lp4Gwc2BVwr-FEKVWk5OrOv"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full">
+<div class="px-margin flex flex-col gap-space-lg">
+<!-- Launch Edition Live Ticker Pill -->
+<div class="w-full bg-surface-container rounded-full p-1.5 pr-4 flex items-center gap-space-sm shadow-sm">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-1">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-primary-fixed animate-ping"></span>
+        Calabar Live
+      </span>
+<p class="font-body-sm text-body-sm text-on-surface truncate">
+        Marian Road • State Housing • UNICAL • MCC
+      </p>
+</div>
+<!-- Hero Typography & Direct CTAs -->
+<div class="flex flex-col gap-space-sm pt-2">
+<div class="inline-flex items-center gap-1.5 self-start px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+        Akanno Tech Labs Mobility System
+      </div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-tight font-extrabold">
+        Every kilometre.<br/><span class="text-primary">A fairer fare.</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Smarter rides, transparent pricing and secure payments across Nigeria. Crafted specifically for Calabar's daily rhythm.
+      </p>
+<!-- Action Buttons -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-2">
+<a class="h-14 rounded-full bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-transform" data-path="book-ride" href="#">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">local_taxi</span>
+          Book a Ride
+        </a>
+<a class="h-14 rounded-full bg-inverse-surface text-inverse-on-surface font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition-transform" data-path="drive-partner" href="#">
+<span class="material-symbols-outlined text-[20px]">card_travel</span>
+          Drive with Routena
+        </a>
+</div>
+</div>
+<!-- Live Calabar Velocity Metrics Bento -->
+<div class="grid grid-cols-3 gap-2 bg-surface-container-lowest p-3 rounded-2xl shadow-sm">
+<div class="flex flex-col items-center justify-center text-center p-2 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">sensors</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">142</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Drivers Online</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center p-2 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">4.9★</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Avg Rating</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center p-2 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">4.2m</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Pickup ETA</span>
+</div>
+</div>
+<!-- Visual Calabar City Backdrop Slice -->
+<div class="relative w-full h-44 rounded-2xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Vibrant tropical twilight street scene in Calabar Nigeria near Marian Road, smooth clean asphalt, glowing street lamps, sleek modern passenger sedan with emerald green accents driving gently, high fidelity cinematic mobile photograph with lush Cross River palms and warm architectural glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgzftI4BJ5PDKSRlVdr2SE2Lo9L1cZsmWYMPq2wXqDMcMAe-GwQ1HHlQl5PGKAHwmGv0idawgmUJRUi7dDLP-WeXLaBaBwNdwbb8FzYjfC30y7kvWUdp1aYFbX1Clvp_Wm5mYF5HsQszI4ZfiId-L2YOIu21o4Z6zH5V_jLOQiSrhj6eABVfQE0_HYTkMeD518nxtzMGB7l7w7iT5YRjyor4oqSdekeWpAoUb0w7gt"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent flex items-end p-4">
+<div class="flex items-center justify-between w-full">
+<div>
+<p class="font-label-md text-label-md text-surface-bright font-bold">Cross River Metro Hub</p>
+<p class="font-body-sm text-body-sm text-surface-variant">Calabar Municipal &amp; South coverage zone</p>
+</div>
+<span class="bg-primary/90 text-on-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full backdrop-blur-md">Active Zone</span>
+</div>
+</div>
+</div>
+<!-- Interactive Transparent Fare Estimator Quick-Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">calculate</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Instant Route Estimate</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-semibold">Zero Surge Surcharge</span>
+</div>
+<!-- Route Stepper Inputs -->
+<div class="bg-surface-container-low p-3 rounded-xl flex flex-col gap-3 relative">
+<!-- Connecting dotted route indicator -->
+<div class="absolute left-6 top-7 bottom-7 w-0.5 bg-outline-variant"></div>
+<!-- Pickup Input -->
+<div class="flex items-center gap-3 relative z-10">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center flex-shrink-0">
+<span class="w-2 h-2 rounded-full bg-on-primary-container"></span>
+</div>
+<div class="flex-1 min-w-0">
+<label class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Pickup Location</label>
+<select class="w-full bg-transparent font-title-md text-title-md text-on-surface font-semibold focus:outline-none appearance-none truncate cursor-pointer" id="pickup-select">
+<option selected="" value="airport">Margaret Ekpo Int'l Airport</option>
+<option value="unical">UNICAL Main Gate, Etta Agbor</option>
+<option value="marian">Marian Road (IBB Way Junction)</option>
+<option value="housing">State Housing Estate</option>
+</select>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">expand_more</span>
+</div>
+<!-- Destination Input -->
+<div class="flex items-center gap-3 relative z-10 pt-1">
+<div class="w-6 h-6 rounded-md bg-inverse-surface text-inverse-on-surface flex items-center justify-center flex-shrink-0">
+<span class="w-2 h-2 rounded bg-inverse-on-surface"></span>
+</div>
+<div class="flex-1 min-w-0">
+<label class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Dropoff Point</label>
+<select class="w-full bg-transparent font-title-md text-title-md text-on-surface font-semibold focus:outline-none appearance-none truncate cursor-pointer" id="dropoff-select">
+<option selected="" value="marina">Marina Resort / Calabar Harbour</option>
+<option value="mcc">MCC Road Commercial Node</option>
+<option value="crutech">UNICROSS (CRUTECH) Campus</option>
+<option value="tinapa">Tinapa Free Trade Zone</option>
+</select>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Live Fare Display Card with Calculation Breakdown -->
+<div class="bg-surface-container p-4 rounded-xl flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Estimated Transparent Fare</span>
+<div class="flex items-baseline gap-1">
+<span class="font-currency-display text-currency-display text-primary font-extrabold tracking-tight" id="fare-amount">₦2,400</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ sedan</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Indexed at ₦780/L baseline fuel</span>
+</div>
+<div class="text-right flex flex-col items-end">
+<span class="font-label-md text-label-md text-on-surface font-bold">11.4 km</span>
+<span class="font-body-sm text-body-sm text-primary font-medium">~16 mins transit</span>
+</div>
+</div>
+<button class="w-full h-12 rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-all" id="calc-button">
+<span class="material-symbols-outlined text-[18px]">toll</span>
+        Calculate Transparent Fare
+      </button>
+</div>
+<!-- Section Heading: Why Routena Wins -->
+<div class="flex flex-col gap-1 pt-2">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-widest">Fairness Engineered</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-extrabold tracking-tight">
+        Why Routena Wins in Calabar
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        No arbitrary algorithm spikes. No delayed driver disbursements. Built with Nigerian urban transit economics in mind.
+      </p>
+</div>
+<!-- Pillar 1: Fuel-Smart Dynamic Pricing -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-3">
+<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">local_gas_station</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Fuel-Smart Dynamic Pricing</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Directly indexed to real-time pump prices at NNPC &amp; major Calabar depots (Current: ₦780/L). No arbitrary surge price gouging when it rains on Marian Road.
+        </p>
+</div>
+<div class="bg-surface-container-low p-3 rounded-xl flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Depot Feed: NNPC Calabar</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">Live Pump Parity Sync</span>
+</div>
+</div>
+<!-- Pillar 2: Guaranteed Driver Equity -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-3">
+<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[26px]">account_balance_wallet</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Guaranteed Driver Equity</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Drivers keep 88% of every fare with instant settlements into Nigerian commercial bank accounts via Paystack &amp; Moniepoint integrations.
+        </p>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div class="p-2.5 rounded-xl bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Driver Retains</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold text-primary">88%</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Disbursement</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold text-on-surface">Instant</span>
+</div>
+</div>
+</div>
+<!-- Pillar 3: Prepaid Secure Escrow Trips -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-3">
+<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">pin</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Prepaid Secure Escrow Trips</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Pre-authorized escrow holding. Funds only release when you safely arrive and share your unique 6-digit trip completion PIN with the driver.
+        </p>
+</div>
+<div class="bg-surface-container-low p-3 rounded-xl flex items-center gap-3">
+<div class="flex gap-1">
+<span class="w-6 h-7 rounded bg-surface-container-highest flex items-center justify-center font-title-md text-title-md font-mono font-bold text-on-surface">4</span>
+<span class="w-6 h-7 rounded bg-surface-container-highest flex items-center justify-center font-title-md text-title-md font-mono font-bold text-on-surface">8</span>
+<span class="w-6 h-7 rounded bg-surface-container-highest flex items-center justify-center font-title-md text-title-md font-mono font-bold text-on-surface">2</span>
+<span class="w-6 h-7 rounded bg-surface-container-highest flex items-center justify-center font-title-md text-title-md font-mono font-bold text-on-surface">•</span>
+<span class="w-6 h-7 rounded bg-surface-container-highest flex items-center justify-center font-title-md text-title-md font-mono font-bold text-on-surface">•</span>
+<span class="w-6 h-7 rounded bg-surface-container-highest flex items-center justify-center font-title-md text-title-md font-mono font-bold text-on-surface">•</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Escrow secured PIN verification protects both passenger &amp; operator.</p>
+</div>
+</div>
+<!-- Driver Partner Spotlight Card -->
+<div class="bg-surface-container rounded-2xl p-space-md flex flex-col gap-3 shadow-sm">
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Portrait of an experienced Nigerian male driver smiling warmly in a tidy car interior in Calabar, natural soft daylight, professional attire, confidence and friendliness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQNIBljcPetKUBvP8spub7YFnofrAgpWjAvKicyV0HlvLNSErSXyaUh81CAJLBvggcG1WYaEIlBs-gpLlpow-MoqBzYQw0A8GYRx6xsWoAJpSTNBt-Ct1M6ZQawfWm6YsR4pqKxP6nAqkindYigfpttABXeptMPvLlQXmXDV_QAI2DGdBeNt1fhKCY8dSwnUIiBZDk1SsjU4bxdE3wKcDjsXqi-scsZY7M5U66VOtv"/>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Drive in Calabar this week</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Earn up to ₦145,000 net weekly</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+        Flexible shifts around Marian Road, State Housing &amp; University commuting rush. Fast onboarding within 24 hours.
+      </p>
+<a class="w-full h-11 rounded-full bg-on-surface text-surface font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-all" data-path="drive-partner" href="#">
+<span>Start Onboarding Application</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Trust, Safety & Regulatory Accreditation -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">shield</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Trust &amp; Regulatory Compliance</h3>
+</div>
+<div class="space-y-2">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+            Fully registered corporate entity: <strong>Akanno Tech Labs Limited</strong> (RC-1983021, Corporate Affairs Commission Nigeria).
+          </p>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+            Compliant with Cross River State Ministry of Transport municipal ride-hailing guidelines and NDPR data protection protocols.
+          </p>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+            Emergency 24/7 Calabar Operations &amp; Safety Response Dispatch backed by live trip telematics.
+          </p>
+</div>
+</div>
+</div>
+<!-- Footer Area -->
+<footer class="pt-4 pb-2 flex flex-col gap-space-md">
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">Services</span>
+<a class="font-body-sm text-body-sm text-on-surface hover:text-primary" data-path="book-ride" href="#">City Commute</a>
+<a class="font-body-sm text-body-sm text-on-surface hover:text-primary" data-path="book-ride" href="#">Airport Express</a>
+<a class="font-body-sm text-body-sm text-on-surface hover:text-primary" data-path="drive-partner" href="#">Drive &amp; Earn</a>
+<a class="font-body-sm text-body-sm text-on-surface hover:text-primary" data-path="fleet-admin" href="#">Fleet Partners</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">Governance</span>
+<a class="font-body-sm text-body-sm text-on-surface hover:text-primary" href="#">Transparent Pricing</a>
+<a class="font-body-sm text-body-sm text-on-surface hover:text-primary" href="#">Driver Standards</a>
+<a class="font-body-sm text-body-sm text-on-surface hover:text-primary" href="#">Safety Protocols</a>
+<a class="font-body-sm text-body-sm text-on-surface hover:text-primary" href="#">Privacy &amp; NDPR</a>
+</div>
+</div>
+<div class="pt-4 border-t-0 flex flex-col gap-1 text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+          ROUTENA Mobility Platform • Powered by Akanno Tech Labs Limited
+        </p>
+<p class="font-label-sm text-label-sm text-on-surface-variant/80">
+          Calabar, Cross River State, Federal Republic of Nigeria.
+        </p>
+</div>
+</footer>
+</div>
+</div>
+<script>
+  (function initFareCalculator() {
+    const pickup = document.getElementById('pickup-select');
+    const dropoff = document.getElementById('dropoff-select');
+    const calcBtn = document.getElementById('calc-button');
+    const fareDisplay = document.getElementById('fare-amount');
+
+    const rates = {
+      'airport-marina': '₦2,400',
+      'airport-mcc': '₦1,900',
+      'airport-crutech': '₦2,800',
+      'airport-tinapa': '₦4,500',
+      'unical-marina': '₦1,600',
+      'unical-mcc': '₦1,400',
+      'unical-crutech': '₦1,800',
+      'unical-tinapa': '₦3,900',
+      'marian-marina': '₦1,800',
+      'marian-mcc': '₦1,200',
+      'marian-crutech': '₦2,200',
+      'marian-tinapa': '₦3,600',
+      'housing-marina': '₦2,100',
+      'housing-mcc': '₦1,500',
+      'housing-crutech': '₦2,600',
+      'housing-tinapa': '₦3,400'
+    };
+
+    function updateFare() {
+      if (!pickup || !dropoff || !fareDisplay) return;
+      const key = `${pickup.value}-${dropoff.value}`;
+      const fare = rates[key] || '₦2,200';
+      fareDisplay.textContent = fare;
+      fareDisplay.classList.add('scale-105');
+      setTimeout(() => fareDisplay.classList.remove('scale-105'), 180);
+    }
+
+    if (calcBtn) {
+      calcBtn.addEventListener('click', updateFare);
+    }
+    if (pickup) {
+      pickup.addEventListener('change', updateFare);
+    }
+    if (dropoff) {
+      dropoff.addEventListener('change', updateFare);
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-gutter"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 transition-all text-primary font-bold" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">explore</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-all hover:text-on-surface" data-path="book-ride" href="#"><span class="material-symbols-outlined text-[24px]">local_taxi</span><span class="font-label-sm text-label-sm">Book Ride</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-all hover:text-on-surface" data-path="drive-partner" href="#"><span class="material-symbols-outlined text-[24px]">steering_wheel_heat</span><span class="font-label-sm text-label-sm">Drive</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-all hover:text-on-surface" data-path="fleet-admin" href="#"><span class="material-symbols-outlined text-[24px]">hub</span><span class="font-label-sm text-label-sm">Fleet</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-all hover:text-on-surface" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav></body></html>

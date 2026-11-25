@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="en" style=""><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error-container": "#93000a", "on-surface-variant": "#3c4a42", "inverse-primary": "#4edea3", "on-primary-container": "#00422b", "primary": "#006c49", "tertiary": "#446900", "surface-variant": "#d3e4fe", "secondary": "#585e6f", "tertiary-fixed-dim": "#98da27", "on-primary": "#ffffff", "on-secondary-fixed-variant": "#404757", "secondary-container": "#d9dff4", "tertiary-container": "#78b300", "outline": "#6c7a71", "surface-container-highest": "#d3e4fe", "primary-fixed": "#6ffbbe", "on-surface": "#0b1c30", "primary-fixed-dim": "#4edea3", "on-tertiary-container": "#283f00", "on-primary-fixed": "#002113", "primary-container": "#10b981", "on-secondary-container": "#5c6274", "surface-container": "#e5eeff", "error": "#ba1a1a", "on-primary-fixed-variant": "#005236", "surface-bright": "#f8f9ff", "inverse-on-surface": "#eaf1ff", "on-secondary": "#ffffff", "tertiary-fixed": "#b2f746", "outline-variant": "#bbcabf", "secondary-fixed-dim": "#c0c6da", "on-tertiary-fixed-variant": "#334f00", "surface-tint": "#006c49", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#121f00", "on-tertiary": "#ffffff", "surface-container-low": "#eff4ff", "surface-dim": "#cbdbf5", "on-error": "#ffffff", "on-background": "#0b1c30", "error-container": "#ffdad6", "secondary-fixed": "#dce2f6", "inverse-surface": "#213145", "background": "#f8f9ff", "on-secondary-fixed": "#151b2a", "surface-container-high": "#dce9ff", "surface": "#f8f9ff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "gutter-md": "1.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xl": "2rem", "space-xs": "0.25rem", "margin-md": "1.5rem", "margin": "1rem", "gutter-lg": "2rem", "gutter": "1rem", "margin-lg": "3rem", "space-2xl": "3rem", "space-md": "1rem" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "currency-display": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Inter"] }, "fontSize": { "headline-lg": ["30px", { "lineHeight": "38px", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "800" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "currency-display": ["28px", { "lineHeight": "34px", "fontWeight": "800" }], "headline-xl": ["40px", { "lineHeight": "48px", "fontWeight": "800" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+    @keyframes successGlow {
+      0%, 100% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.25), 0 0 45px rgba(16, 185, 129, 0.1); }
+      50% { box-shadow: 0 0 35px rgba(78, 222, 163, 0.45), 0 0 65px rgba(16, 185, 129, 0.25); }
+    }
+    .sync-glow {
+      animation: successGlow 3s ease-in-out infinite;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><img alt="ROUTENA Wordmark &amp; Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WyHB3p59YCLXxtT1iFVSaLh7CZkBlVL3vDNg9YU65HQA9sfVWKpO0FesXZgkvSeQM6sOvvoAW-OtPwFV-D9wXacMBt7vbJojJjRusaj1ygqPd71VvsncvvrCACQHI_K1fVQUfjTL6H-sj1ffQeSE3Am65SKBWWiB2iitoqniovJL_v0FjQ8GsGI1Ndj7N2Q9SKEjoU_UVqlEZQVFYepnFOBvhktPpDAA1iO-OL0qvoTg"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold hidden sm:inline">ROUTENA</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-low shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><span class="flex h-2 w-2 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span><span class="font-label-sm text-label-sm text-on-surface-variant font-semibold tracking-tight whitespace-nowrap">⛽ Calabar ₦780/L</span></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:scale-95 transition-all"><span class="material-symbols-outlined text-[22px]">notifications</span></button><a class="w-11 h-11 flex items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-primary-container" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVnwgwQJ9zxFBOU10PonHxZLq1vm7-XGZexAMCP4ySkU4a7sB7wmiAzn4HvCwEFKJmMKp7mzjpXtoBLAIE3GIwsWs1lnRMEkVWv5_1O4qHUc8YLjhUpfIV9ZSCM7S96czt4AYOIb--dFBJ0I50iWB1U5p1dpSs_piqqyLpIW77ZXXMkKt3U9ehlP-bOgTHfkufBYTXJH2BImdxfrD81Lp4Gwc2BVwr-FEKVWk5OrOv"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Top Offline Status Pill Bar -->
+<div class="px-gutter pt-2 pb-3">
+<div class="w-full bg-surface-container-high rounded-full px-space-md py-2 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2 min-w-0">
+<span class="flex h-2.5 w-2.5 relative flex-shrink-0">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary-container"></span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-bold truncate">
+          OFFLINE SEAL ENGAGED • CELLULAR DISCONNECTED
+        </span>
+</div>
+<div class="flex items-center gap-1.5 flex-shrink-0">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[13px]">lock</span>
+          AIR-GAPPED
+        </span>
+<button aria-label="Toggle offline seal details" class="text-on-surface-variant flex items-center justify-center w-6 h-6 rounded-full hover:bg-surface-container transition-colors" id="infoToggleBtn">
+<span class="material-symbols-outlined text-[18px]">info</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Hero Hardware Security Visual Status -->
+<div class="px-gutter mb-space-md">
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-lg p-space-lg shadow-md flex flex-col items-center text-center">
+<!-- Ambient Glow Decorator -->
+<div class="absolute -top-12 -right-12 w-40 h-40 bg-primary-fixed/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-10 w-36 h-36 bg-tertiary-fixed/25 rounded-full blur-2xl pointer-events-none"></div>
+<!-- High-Tech Secure Enclave Hardware Chip Emblem -->
+<div class="relative w-28 h-28 my-space-sm flex items-center justify-center">
+<!-- Pulse ring behind chip -->
+<div class="absolute inset-0 rounded-2xl bg-surface-container sync-glow"></div>
+<!-- Hardware Chip Base Frame -->
+<div class="relative w-20 h-20 rounded-2xl bg-on-surface flex items-center justify-center shadow-lg">
+<!-- Pin Pins Visual Accents -->
+<div class="absolute -top-1.5 inset-x-3 flex justify-between px-1">
+<span class="w-1 h-1.5 bg-primary-fixed rounded-sm"></span>
+<span class="w-1 h-1.5 bg-primary-fixed rounded-sm"></span>
+<span class="w-1 h-1.5 bg-primary-fixed rounded-sm"></span>
+<span class="w-1 h-1.5 bg-primary-fixed rounded-sm"></span>
+</div>
+<div class="absolute -bottom-1.5 inset-x-3 flex justify-between px-1">
+<span class="w-1 h-1.5 bg-primary-fixed rounded-sm"></span>
+<span class="w-1 h-1.5 bg-primary-fixed rounded-sm"></span>
+<span class="w-1 h-1.5 bg-primary-fixed rounded-sm"></span>
+<span class="w-1 h-1.5 bg-primary-fixed rounded-sm"></span>
+</div>
+<div class="absolute -left-1.5 inset-y-3 flex flex-col justify-between py-1">
+<span class="h-1 w-1.5 bg-primary-fixed rounded-sm"></span>
+<span class="h-1 w-1.5 bg-primary-fixed rounded-sm"></span>
+<span class="h-1 w-1.5 bg-primary-fixed rounded-sm"></span>
+</div>
+<div class="absolute -right-1.5 inset-y-3 flex flex-col justify-between py-1">
+<span class="h-1 w-1.5 bg-primary-fixed rounded-sm"></span>
+<span class="h-1 w-1.5 bg-primary-fixed rounded-sm"></span>
+<span class="h-1 w-1.5 bg-primary-fixed rounded-sm"></span>
+</div>
+<!-- Central Shield & Cryptographic Lock -->
+<div class="w-12 h-12 rounded-xl bg-surface-container-high/20 backdrop-blur-md flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<!-- Disconnected Cloud Warning Satellite Indicator -->
+<div class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-error flex items-center justify-center text-on-error shadow-sm">
+<span class="material-symbols-outlined text-[15px]">cloud_off</span>
+</div>
+<!-- Green Hardware Integrity Seal Satellite -->
+<div class="absolute -bottom-2 -left-2 w-7 h-7 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+</div>
+</div>
+<!-- Headline & Subtext -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight mt-3">
+        PIN Sealed Locally in Hardware Keystore
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-sm">
+        Mobile network dropped during cloud handshake. Your 4-digit PIN is cryptographically sealed in the device’s local Android KeyStore / Secure Enclave. Safe Handover is 100% active and protected.
+      </p>
+<!-- Trust Metadata Badges -->
+<div class="flex flex-wrap items-center justify-center gap-2 mt-4">
+<div class="px-3 py-1 rounded-full bg-surface-container flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-primary">memory</span>
+<span class="font-label-sm text-label-sm font-semibold">TEE StrongBox</span>
+</div>
+<div class="px-3 py-1 rounded-full bg-surface-container flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-primary">key</span>
+<span class="font-label-sm text-label-sm font-semibold">AES-256 Air-Gapped</span>
+</div>
+<div class="px-3 py-1 rounded-full bg-surface-container flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-primary">fingerprint</span>
+<span class="font-label-sm text-label-sm font-semibold">Biometrics Bound</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Network & Sync Queue Status Card -->
+<div class="px-gutter mb-space-md">
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm">
+<!-- Cellular Disconnected Notice -->
+<div class="flex items-start gap-3 p-3 rounded-DEFAULT bg-surface-container-high mb-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center flex-shrink-0 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">signal_cellular_nodata</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">Cellular Connection: 0 Bars</span>
+<span class="font-label-sm text-label-sm text-error bg-error-container/40 px-2 py-0.5 rounded-full font-bold">Offline</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Calabar South Base Station (MTN/Airtel) unreachable. Switching instantly to zero-trust local autonomy.
+          </p>
+</div>
+</div>
+<!-- Deferred Cloud Sync Ledger -->
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Deferred Sync Ledger</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface-variant">1 Pending Commit</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate font-mono mt-0.5">
+              Tx ID: #OFFLINE-SEAL-8849-CLB
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[18px]">sync_saved_locally</span>
+</div>
+<div class="min-w-0 flex-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Automatic Silent Sync</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Will silently sync cryptographic hash to ROUTENA Command cluster once 4G/3G or Wi-Fi is re-established. Zero driver action required.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[18px]">hourglass_top</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Offline TTL Enclave Cache</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">71h 59m Remaining</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-1.5 overflow-hidden">
+<div class="bg-primary-container h-1.5 rounded-full w-[98%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Local Hardware Security Attestation Details (Collapsible / Rich Card) -->
+<div class="px-gutter mb-space-md">
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary" style="font-variation-settings: 'FILL' 1;">enhanced_encryption</span>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Hardware Security Attestation</h2>
+</div>
+<span class="px-2 py-0.5 bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm rounded-full font-bold">ARMORED</span>
+</div>
+<div class="space-y-2.5">
+<div class="flex items-center justify-between p-2.5 rounded-DEFAULT bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">developer_board</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hardware Module</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">TEE / StrongBox Keymaster 4.0</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-DEFAULT bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">lock_clock</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cipher Suite</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">AES-256-GCM Hardware-Bound</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-DEFAULT bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">fingerprint</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Biometric Link</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+            Bound &amp; Active
+          </span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-DEFAULT bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">shield_person</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Handover Guard</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Safe Handover Enforced</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Roadside Inspection Officer Banner (Calabar VIO / FRSC Ready) -->
+<div class="px-gutter mb-space-md">
+<div class="bg-surface-container-low rounded-lg p-space-md shadow-sm">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]">badge</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Roadside Inspection Ready</h3>
+<span class="bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">VIO / FRSC</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Need to show vehicle credentials to authorities right now? Your state Hackney Permit, Roadworthiness, and Enclave Seal QR function offline without data connection.
+          </p>
+<button class="mt-3 w-full bg-surface-container-lowest text-on-surface hover:bg-surface-container py-2.5 px-3 rounded-full flex items-center justify-center gap-2 transition-all active:scale-[0.98] shadow-sm" id="viewDigitalPassBtn">
+<span class="material-symbols-outlined text-[18px] text-primary">qr_code_2</span>
+<span class="font-label-md text-label-md font-bold">Open Roadside Digital Inspection Pass &amp; QR</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Action & Manual Retry Controls -->
+<div class="px-gutter space-y-3 mb-space-md">
+<button class="w-full h-14 bg-primary text-on-primary rounded-full font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-md hover:bg-primary/95 active:scale-[0.98] transition-all" id="enterSafeModeBtn">
+<span>Enter Safe Handover Mode Now</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<button class="w-full h-12 bg-surface-container-lowest text-on-surface rounded-full font-label-md text-label-md font-bold flex items-center justify-center gap-2 shadow-sm hover:bg-surface-container active:scale-[0.98] transition-all" id="retryHandshakeBtn">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant transition-transform" id="retryIcon">refresh</span>
+<span id="retryText">Retry Cloud Handshake (Manual Sync)</span>
+</button>
+</div>
+<!-- Cryptographic Telemetry Monospace Console -->
+<div class="px-gutter mb-2">
+<div class="bg-inverse-surface rounded-lg p-space-md shadow-inner text-inverse-on-surface">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">terminal</span>
+<span class="font-label-sm text-label-sm font-bold tracking-wider uppercase text-outline-variant">ENCLAVE_TELEMETRY_LOG</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary-fixed font-mono">SYS_OK::OFFLINE</span>
+</div>
+<pre class="font-mono text-[11px] leading-relaxed text-inverse-on-surface/90 overflow-x-auto whitespace-pre">ENCLAVE_SEAL      : LOCAL_HARDWARE_SUCCESS
+NETWORK_STATUS    : NO_CARRIER_OFFLINE_FAILOVER
+DISPATCH_QUEUE    : 1_PENDING_UPSTREAM_COMMIT
+HARDWARE_TEE      : STRONGBOX_CALABAR_8849
+PIN_ATTESTATION   : CRYPTO_HASH_SEALED_LOCAL
+SAFE_HANDOVER     : ARMED_AND_ENFORCED
+EXPIRATION_EPOCH  : 2025-05-18T14:32:00Z (72H_TTL)</pre>
+</div>
+</div>
+<!-- Interactive Feedback Drawer / Toast Container (Hidden by default) -->
+<div class="fixed bottom-20 inset-x-gutter z-40 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
+<div class="bg-on-surface text-surface-bright p-3 rounded-lg shadow-xl flex items-center justify-between gap-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary-fixed" id="toastIcon">check_circle</span>
+<span class="font-body-sm text-body-sm font-semibold" id="toastMsg">Action confirmed</span>
+</div>
+<button class="text-surface-bright/70 hover:text-surface-bright" id="closeToastBtn">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const retryBtn = document.getElementById('retryHandshakeBtn');
+    const retryIcon = document.getElementById('retryIcon');
+    const retryText = document.getElementById('retryText');
+    const enterSafeModeBtn = document.getElementById('enterSafeModeBtn');
+    const viewDigitalPassBtn = document.getElementById('viewDigitalPassBtn');
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMsg');
+    const infoToggleBtn = document.getElementById('infoToggleBtn');
+
+    function showToast(message, icon = 'info') {
+      if (!toast) return;
+      toastMsg.textContent = message;
+      const toastIconEl = document.getElementById('toastIcon');
+      if (toastIconEl) toastIconEl.textContent = icon;
+      toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3500);
+    }
+
+    if (retryBtn) {
+      retryBtn.addEventListener('click', function() {
+        if (!retryIcon || !retryText) return;
+        retryIcon.classList.add('animate-spin');
+        retryText.textContent = 'Probing Calabar GSM cell towers...';
+        retryBtn.disabled = true;
+
+        setTimeout(() => {
+          retryIcon.classList.remove('animate-spin');
+          retryText.textContent = 'Retry Cloud Handshake (Manual Sync)';
+          retryBtn.disabled = false;
+          showToast('Cellular still offline. Local hardware seal remains fully armed and secure.', 'signal_disconnected');
+        }, 2200);
+      });
+    }
+
+    if (enterSafeModeBtn) {
+      enterSafeModeBtn.addEventListener('click', function() {
+        showToast('Entering Armored Safe Handover Enclave Mode...', 'shield');
+      });
+    }
+
+    if (viewDigitalPassBtn) {
+      viewDigitalPassBtn.addEventListener('click', function() {
+        showToast('Generating offline cryptographic inspection pass for VIO/FRSC...', 'qr_code_2');
+      });
+    }
+
+    if (infoToggleBtn) {
+      infoToggleBtn.addEventListener('click', function() {
+        showToast('Cryptographic autonomy active: All driver data protected inside hardware chip.', 'verified_user');
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-gutter"><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-all hover:text-on-surface" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">explore</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-all hover:text-on-surface" data-path="book-ride" href="#"><span class="material-symbols-outlined text-[24px]">local_taxi</span><span class="font-label-sm text-label-sm">Book Ride</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-all hover:text-on-surface" data-path="drive-partner" href="#"><span class="material-symbols-outlined text-[24px]">steering_wheel_heat</span><span class="font-label-sm text-label-sm">Drive</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-all hover:text-on-surface" data-path="fleet-admin" href="#"><span class="material-symbols-outlined text-[24px]">hub</span><span class="font-label-sm text-label-sm">Fleet</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-all hover:text-on-surface" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav>
+</body></html>

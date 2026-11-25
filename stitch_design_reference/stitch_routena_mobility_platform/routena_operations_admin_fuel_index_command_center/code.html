@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary":"#ffffff","surface-dim":"#cbdbf5","tertiary-fixed-dim":"#98da27","on-surface":"#0b1c30","on-primary-container":"#00422b","surface-bright":"#f8f9ff","error":"#ba1a1a","tertiary-fixed":"#b2f746","on-primary-fixed":"#002113","surface-container":"#e5eeff","surface-container-lowest":"#ffffff","surface-container-low":"#eff4ff","tertiary":"#446900","on-error-container":"#93000a","on-secondary":"#ffffff","secondary-fixed":"#dce2f6","outline-variant":"#bbcabf","on-primary":"#ffffff","secondary-fixed-dim":"#c0c6da","background":"#f8f9ff","surface":"#f8f9ff","on-error":"#ffffff","surface-tint":"#006c49","primary-container":"#10b981","on-secondary-fixed-variant":"#404757","surface-variant":"#d3e4fe","on-secondary-fixed":"#151b2a","primary-fixed-dim":"#4edea3","on-background":"#0b1c30","surface-container-highest":"#d3e4fe","inverse-primary":"#4edea3","inverse-on-surface":"#eaf1ff","error-container":"#ffdad6","primary-fixed":"#6ffbbe","on-tertiary-fixed":"#121f00","on-tertiary-container":"#283f00","surface-container-high":"#dce9ff","secondary":"#585e6f","secondary-container":"#d9dff4","tertiary-container":"#78b300","inverse-surface":"#213145","on-secondary-container":"#5c6274","on-tertiary-fixed-variant":"#334f00","outline":"#6c7a71","primary":"#006c49","on-primary-fixed-variant":"#005236","on-surface-variant":"#3c4a42"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"gutter-md":"1.5rem","space-sm":"0.5rem","margin-lg":"3rem","space-xs":"0.25rem","space-xl":"2rem","margin-md":"1.5rem","margin":"1rem","space-2xl":"3rem","gutter":"1rem","space-md":"1rem","gutter-lg":"2rem","space-lg":"1.5rem"},"fontFamily":{"headline-lg-mobile":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"currency-display":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-xl":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"]},"fontSize":{"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"22px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","fontWeight":"700"}],"currency-display":["28px",{"lineHeight":"34px","fontWeight":"800"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl":["40px",{"lineHeight":"48px","fontWeight":"800"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["30px",{"lineHeight":"38px","fontWeight":"700"}],"headline-xl-mobile":["32px",{"lineHeight":"40px","fontWeight":"800"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-inverse-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="p-space-lg flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded bg-primary-container flex items-center justify-center shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-on-primary-container text-[22px]">local_shipping</span></div><div><span class="font-headline-sm text-headline-sm text-inverse-on-surface tracking-tight block">ROUTENA</span><span class="font-label-sm text-label-sm text-inverse-on-surface/60 uppercase tracking-wider block">Mobility Command</span></div></div><div class="mt-space-sm inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-lowest/10 w-fit"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-inverse-on-surface">Calabar Hub: Active</span></div></div><nav class="flex flex-col px-space-sm gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm"><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm rounded transition-colors bg-primary-container text-on-primary-container font-headline-sm" data-path="operations-command" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Operations Command</span></span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded text-inverse-on-surface/75 hover:bg-surface-container-lowest/10 hover:text-inverse-on-surface transition-colors font-label-lg text-label-lg" data-path="live-fleet-trips" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">alt_route</span><span>Live Fleet &amp; Trips</span></span><span class="px-space-xs py-0.5 rounded-full bg-surface-container-lowest/15 text-inverse-on-surface font-label-sm text-label-sm">318</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded text-inverse-on-surface/75 hover:bg-surface-container-lowest/10 hover:text-inverse-on-surface transition-colors font-label-lg text-label-lg" data-path="fuel-index-engine" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">local_gas_station</span><span>Fuel Index Engine</span></span><span class="w-2 h-2 rounded-full bg-tertiary-fixed"></span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded text-inverse-on-surface/75 hover:bg-surface-container-lowest/10 hover:text-inverse-on-surface transition-colors font-label-lg text-label-lg" data-path="financial-escrow-payouts" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span>Financial Escrow &amp; Payouts</span></span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded text-inverse-on-surface/75 hover:bg-surface-container-lowest/10 hover:text-inverse-on-surface transition-colors font-label-lg text-label-lg" data-path="driver-approvals-kyc" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">how_to_reg</span><span>Driver Approvals &amp; KYC</span></span><span class="px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">3 pending</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded text-inverse-on-surface/75 hover:bg-surface-container-lowest/10 hover:text-inverse-on-surface transition-colors font-label-lg text-label-lg" data-path="safety-disputes" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">shield</span><span>Safety &amp; Disputes</span></span><span class="px-space-xs py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm">1 alert</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded text-inverse-on-surface/75 hover:bg-surface-container-lowest/10 hover:text-inverse-on-surface transition-colors font-label-lg text-label-lg" data-path="system-settings" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">settings</span><span>System Settings</span></span></a></nav></div><div class="p-space-md m-space-sm rounded bg-surface-container-lowest/5 flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-inverse-on-surface/70 uppercase tracking-wider">Node Controller</span><span class="font-label-sm text-label-sm text-primary-fixed">WAT (UTC+1)</span></div><span class="font-body-sm text-body-sm text-inverse-on-surface/90">Akanno Tech Labs Limited</span><span class="font-label-sm text-label-sm text-inverse-on-surface/50">Calabar Sector Grid v3.4.1</span></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/90 backdrop-blur-xl z-40 flex items-center justify-between px-gutter-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-lg"><div class="flex flex-col"><div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant"><span class="font-title-md text-title-md text-on-surface">Cross River Sector</span><span class="material-symbols-outlined text-[16px]">chevron_right</span><span>Calabar Metro</span><span class="material-symbols-outlined text-[16px]">chevron_right</span><span class="text-primary font-headline-sm text-headline-sm">Live Grid</span></div><div class="flex items-center gap-space-sm mt-0.5"><span class="font-body-sm text-body-sm text-on-surface-variant">WAT 14:42:08</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span class="font-body-sm text-body-sm text-on-surface-variant">Marian • UNICAL • Airport Corridor</span></div></div><div class="hidden xl:flex items-center gap-space-sm px-space-md py-space-xs rounded-full bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-ping"></span><span class="font-label-sm text-label-sm text-on-surface">Calabar NNPC Depot: <strong class="text-primary">₦780.00/L</strong></span><span class="text-outline-variant">•</span><span class="font-label-sm text-label-sm text-on-surface">Retail Avg: <strong class="text-secondary">₦815.00/L</strong></span></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container"><span class="material-symbols-outlined text-primary text-[18px]">swap_calls</span><span class="font-label-md text-label-md text-on-surface">318 Active Trips</span></div><div class="flex items-center gap-space-sm"><button class="px-space-md py-space-xs rounded bg-surface-container-high text-on-surface hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md flex items-center gap-space-xs shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[18px]">tune</span><span>Manual Fuel Override</span></button><button class="px-space-md py-space-xs rounded bg-error-container text-on-error-container hover:bg-error hover:text-on-error transition-colors font-label-md text-label-md flex items-center gap-space-xs shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[18px]">campaign</span><span>Emergency Broadcast</span></button></div><div class="h-8 w-[1px] bg-surface-variant"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface">Nseobong E.</span><span class="font-label-sm text-label-sm text-on-surface-variant">Lead Ops Controller</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 px-gutter-lg pb-space-2xl bg-background"><div class="flex flex-col w-full">
+<!-- Sub-Header Alert & Regional Heartbeat Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md py-space-sm px-space-md rounded-DEFAULT bg-surface-container-low mb-space-lg shadow-sm">
+<div class="flex items-center gap-space-md flex-wrap">
+<div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-primary-container/20 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Grid Synced: Calabar Sector v3.4</span>
+</div>
+<span class="text-on-surface-variant font-body-sm text-body-sm hidden md:inline">Telemetry frequency: 1.2s ping • 14 Regional Nodes Active • Esuk Utu NNPC Depot Link Up</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface bg-surface-container-lowest px-space-sm py-1 rounded shadow-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span>Escrow Health: <strong class="text-primary font-bold">99.8%</strong></span>
+</div>
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface bg-surface-container-lowest px-space-sm py-1 rounded shadow-sm">
+<span class="material-symbols-outlined text-error text-[18px]">emergency</span>
+<span>SOS Latency: <strong class="text-on-surface font-bold">&lt; 140ms</strong></span>
+</div>
+</div>
+</div>
+<!-- SECTION 1: Top Executive KPI Command Matrix -->
+<section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-space-md mb-space-xl">
+<!-- KPI 1: Active Live Trips -->
+<div class="flex flex-col justify-between p-space-lg rounded-DEFAULT bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute -right-3 -top-3 w-20 h-20 bg-primary/5 rounded-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Live Transit Mobility</span>
+<span class="material-symbols-outlined text-primary text-[20px]">alt_route</span>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-currency-display text-currency-display text-on-surface">342</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Trips Active</span>
+</div>
+<div class="flex items-center gap-1 mt-1 text-primary">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span class="font-label-sm text-label-sm font-bold">+14.8%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">vs last hour</span>
+</div>
+</div>
+<div class="pt-space-xs bg-surface-container-low rounded p-space-xs">
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span>High Demand Core</span>
+<span class="font-bold text-on-surface">89%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 89%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1 truncate">Marian • UNICAL • Airport</span>
+</div>
+</div>
+<!-- KPI 2: Active Fleet / Drivers -->
+<div class="flex flex-col justify-between p-space-lg rounded-DEFAULT bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute -right-3 -top-3 w-20 h-20 bg-secondary/5 rounded-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Driver Fleet Density</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">directions_car</span>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-currency-display text-currency-display text-on-surface">418</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">Online</span>
+</div>
+<div class="flex items-center gap-1 mt-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary">check_circle</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">94.2%</span>
+<span class="font-body-sm text-body-sm">dispatch accept rate</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs bg-surface-container-low rounded p-space-xs font-label-sm text-label-sm">
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="text-on-surface">Sedan: <strong>86%</strong></span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-on-surface">XL: <strong>14%</strong></span>
+</div>
+</div>
+</div>
+<!-- KPI 3: Daily GTV & Escrow Disbursal -->
+<div class="flex flex-col justify-between p-space-lg rounded-DEFAULT bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute -right-3 -top-3 w-20 h-20 bg-primary-container/10 rounded-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Daily Platform GTV</span>
+<span class="material-symbols-outlined text-primary text-[20px]">payments</span>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">₦4,892,450</span>
+</div>
+<div class="flex items-center justify-between mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>Net Take (12%): <strong class="text-primary font-bold">₦587,094</strong></span>
+</div>
+</div>
+<div class="pt-space-xs bg-surface-container-low rounded p-space-xs">
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm">
+<span>Disbursed to Drivers (88%)</span>
+<span class="text-on-surface font-bold">₦4,305,356</span>
+</div>
+</div>
+</div>
+<!-- KPI 4: Calabar Fuel Index -->
+<div class="flex flex-col justify-between p-space-lg rounded-DEFAULT bg-inverse-surface text-inverse-on-surface shadow-md relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-inverse-on-surface/70 uppercase tracking-wider">Calabar Fuel Index (CFI)</span>
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">local_gas_station</span>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-currency-display text-currency-display text-primary-fixed">₦780.00</span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface/70">/ Liter Depot</span>
+</div>
+<div class="flex items-center gap-1 mt-1 text-tertiary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>Esuk Utu Baseline Linked</span>
+</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/10 font-label-sm text-label-sm flex items-center justify-between">
+<span class="text-inverse-on-surface/80">Pump Spread:</span>
+<span class="text-primary-fixed-dim font-bold">₦805 - ₦830/L</span>
+</div>
+</div>
+<!-- KPI 5: Escrow Safety & Retention -->
+<div class="flex flex-col justify-between p-space-lg rounded-DEFAULT bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute -right-3 -top-3 w-20 h-20 bg-primary/5 rounded-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Security PIN Settlement</span>
+<span class="material-symbols-outlined text-primary text-[20px]">lock_clock</span>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">₦342,000</span>
+</div>
+<div class="flex items-center gap-1 mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>Pending Destination PIN</span>
+</div>
+</div>
+<div class="pt-space-xs bg-surface-container-low rounded p-space-xs flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Auto-Release Success:</span>
+<span class="font-bold text-primary">99.8%</span>
+</div>
+</div>
+</section>
+<!-- SECTION 2 & 3: Master Split - Live Geo-Grid Telematics & Algorithmic Fuel Engine -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- LEFT 7 COLS: Interactive Transit Map & Sector Radar -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="p-space-lg rounded-DEFAULT bg-surface-container-lowest shadow-sm flex flex-col h-full">
+<!-- Map Header Controls -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-primary-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px]">radar</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Calabar Metropolitan Grid &amp; Surge Dispatch</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time driver telematics across major Cross River corridors</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="px-space-sm py-1 rounded bg-surface-container-low text-on-surface text-label-sm font-label-sm hover:bg-surface-container transition-colors flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> All Tiers
+            </button>
+<button class="px-space-sm py-1 rounded bg-surface-container-low text-on-surface text-label-sm font-label-sm hover:bg-surface-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_gas_station</span> Fuel Stations
+            </button>
+<button class="px-space-sm py-1 rounded bg-surface-container text-primary text-label-sm font-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">layers</span> Heatmap
+            </button>
+</div>
+</div>
+<!-- Simulated Map / Tactical Radar Canvas -->
+<div class="relative w-full h-[420px] rounded-DEFAULT bg-inverse-surface overflow-hidden shadow-inner flex items-center justify-center">
+<!-- Background SVG Vector Grid with Calabar Road Paths -->
+<svg class="absolute inset-0 w-full h-full opacity-60" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="40" id="grid-pattern" patternunits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid-pattern)" height="100%" width="100%"></rect>
+<!-- Murtala Mohammed Highway (Main Spine) -->
+<path d="M 120 40 L 280 180 L 450 260 L 680 380" fill="none" stroke="rgba(255,255,255,0.18)" stroke-linecap="round" stroke-width="12"></path>
+<path d="M 120 40 L 280 180 L 450 260 L 680 380" fill="none" stroke="#10b981" stroke-dasharray="8 6" stroke-width="3"></path>
+<!-- Marian Road Arterial -->
+<path d="M 280 180 L 460 140 L 640 160" fill="none" stroke="rgba(255,255,255,0.15)" stroke-linecap="round" stroke-width="8"></path>
+<!-- MCC Road Corridor -->
+<path d="M 450 260 L 520 180 L 580 80" fill="none" stroke="rgba(255,255,255,0.12)" stroke-linecap="round" stroke-width="6"></path>
+<!-- Etta Agbor / UNICAL Spine -->
+<path d="M 450 260 L 380 350 L 320 400" fill="none" stroke="rgba(255,255,255,0.14)" stroke-linecap="round" stroke-width="8"></path>
+<!-- Airport Access Spur -->
+<path d="M 520 180 L 680 230" fill="none" stroke="rgba(255,255,255,0.12)" stroke-linecap="round" stroke-width="6"></path>
+<!-- Calabar River Contour -->
+<path d="M 40 380 Q 140 280 180 120 T 160 20" fill="none" stroke="rgba(78,222,163,0.15)" stroke-width="24"></path>
+</svg>
+<!-- Dynamic Surge Polygons / Glow Discs -->
+<div class="absolute top-[30%] left-[55%] -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full bg-primary-container/15 blur-2xl pointer-events-none"></div>
+<div class="absolute top-[52%] left-[80%] -translate-x-1/2 -translate-y-1/2 w-36 h-36 rounded-full bg-tertiary-fixed/15 blur-xl pointer-events-none"></div>
+<!-- Sector Labels & Surge Chips on Map -->
+<!-- Marian Road Surge Pin -->
+<div class="absolute top-[28%] left-[48%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center group cursor-pointer">
+<div class="px-space-sm py-0.5 rounded-full bg-inverse-surface/90 text-inverse-on-surface text-label-sm font-label-sm shadow-md flex items-center gap-1 backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span>Marian Rd • <strong>1.25x</strong></span>
+</div>
+<div class="w-2 h-2 bg-primary-container rounded-full mt-0.5 shadow-[0_0_12px_#10b981]"></div>
+<span class="font-body-sm text-[10px] text-inverse-on-surface/60 mt-0.5">Festival Corridor</span>
+</div>
+<!-- Margaret Ekpo Airport Surge Pin -->
+<div class="absolute top-[48%] left-[78%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center group cursor-pointer">
+<div class="px-space-sm py-0.5 rounded-full bg-inverse-surface/90 text-inverse-on-surface text-label-sm font-label-sm shadow-md flex items-center gap-1 backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed animate-ping"></span>
+<span>Airport • <strong>1.40x Peak</strong></span>
+</div>
+<div class="w-2.5 h-2.5 bg-tertiary-fixed rounded-full mt-0.5 shadow-[0_0_12px_#b2f746]"></div>
+<span class="font-body-sm text-[10px] text-inverse-on-surface/60 mt-0.5">Air Peace Flight Inbound</span>
+</div>
+<!-- UNICAL Main Gate Surge Pin -->
+<div class="absolute top-[72%] left-[42%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center group cursor-pointer">
+<div class="px-space-sm py-0.5 rounded-full bg-inverse-surface/90 text-inverse-on-surface text-label-sm font-label-sm shadow-md flex items-center gap-1 backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>
+<span>UNICAL Gate • <strong>1.15x</strong></span>
+</div>
+<div class="w-2 h-2 bg-primary-fixed rounded-full mt-0.5 shadow-[0_0_8px_#6ffbbe]"></div>
+</div>
+<!-- Watt Market / Commercial Pin -->
+<div class="absolute top-[78%] left-[68%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center group cursor-pointer">
+<div class="px-space-sm py-0.5 rounded-full bg-inverse-surface/80 text-inverse-on-surface/80 text-label-sm font-label-sm shadow-md flex items-center gap-1 backdrop-blur-md">
+<span>Watt Market • <strong>1.00x</strong></span>
+</div>
+<div class="w-1.5 h-1.5 bg-outline-variant rounded-full mt-0.5"></div>
+</div>
+<!-- Active Vehicle Tracking Nodes (Scatter) -->
+<!-- Vehicle 1 (Green: On Trip) -->
+<div class="absolute top-[32%] left-[38%] group cursor-pointer">
+<div class="w-3.5 h-3.5 rounded-full bg-primary-container flex items-center justify-center shadow-[0_0_10px_#10b981] animate-pulse">
+<span class="material-symbols-outlined text-[10px] text-on-primary-container">navigation</span>
+</div>
+<div class="hidden group-hover:block absolute bottom-full left-1/2 -translate-x-1/2 mb-1 px-2 py-1 bg-inverse-surface text-inverse-on-surface text-label-sm font-label-sm rounded whitespace-nowrap z-30 shadow-lg">
+              CAL-492-AB • On Trip (Airport)
+            </div>
+</div>
+<!-- Vehicle 2 (Blue/Secondary: Dispatched) -->
+<div class="absolute top-[60%] left-[52%] group cursor-pointer">
+<div class="w-3 h-3 rounded-full bg-surface-variant flex items-center justify-center shadow-[0_0_8px_#d3e4fe]">
+<span class="w-1.5 h-1.5 bg-primary rounded-full"></span>
+</div>
+<div class="hidden group-hover:block absolute bottom-full left-1/2 -translate-x-1/2 mb-1 px-2 py-1 bg-inverse-surface text-inverse-on-surface text-label-sm font-label-sm rounded whitespace-nowrap z-30 shadow-lg">
+              CAL-104-BB • Dispatched (Marina Resort)
+            </div>
+</div>
+<!-- Vehicle 3 (Waiting Passenger) -->
+<div class="absolute top-[44%] left-[64%] group cursor-pointer">
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed shadow-[0_0_6px_#b2f746]"></div>
+<div class="hidden group-hover:block absolute bottom-full left-1/2 -translate-x-1/2 mb-1 px-2 py-1 bg-inverse-surface text-inverse-on-surface text-label-sm font-label-sm rounded whitespace-nowrap z-30 shadow-lg">
+              CR-819-AK • Idle (Atekong Junction)
+            </div>
+</div>
+<!-- Vehicle 4 (Moving Highway) -->
+<div class="absolute top-[20%] left-[24%] group cursor-pointer">
+<div class="w-3 h-3 rounded-full bg-primary-container shadow-[0_0_8px_#10b981]"></div>
+</div>
+<!-- Depot Marker Esuk Utu -->
+<div class="absolute bottom-6 left-6 px-space-md py-space-xs rounded bg-inverse-surface/90 backdrop-blur-md text-inverse-on-surface flex items-center gap-space-sm shadow-md">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]">local_gas_station</span>
+<div>
+<span class="font-label-sm text-label-sm block text-primary-fixed">Esuk Utu Depot Pipeline</span>
+<span class="font-body-sm text-[11px] text-inverse-on-surface/70 block">Feed: 18,400 bbl/d flow</span>
+</div>
+</div>
+<!-- Map Telemetry HUD (Bottom Right) -->
+<div class="absolute bottom-6 right-6 flex items-center gap-space-xs bg-inverse-surface/90 backdrop-blur-md px-space-sm py-1 rounded text-inverse-on-surface font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>418 Vehicles Tracked</span>
+<span class="text-inverse-on-surface/40">|</span>
+<span>Calabar Geo-Fence: Clean</span>
+</div>
+</div>
+<!-- Geo-fencing & Surge Multiplier Legend / Quick Table -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm pt-space-md">
+<div class="p-space-sm rounded bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Marian / State Hsg</span>
+<div class="flex items-center justify-between mt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">1.25x</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">High Surge</span>
+</div>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Margaret Ekpo Airport</span>
+<div class="flex items-center justify-between mt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">1.40x</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Peak Inbound</span>
+</div>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">UNICAL Main Gate</span>
+<div class="flex items-center justify-between mt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">1.15x</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Evening Shift</span>
+</div>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Watt Market Core</span>
+<div class="flex items-center justify-between mt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">1.00x</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Standard</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT 5 COLS: Calabar Fuel Index Engine & Dynamic Calibration Terminal -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="p-space-lg rounded-DEFAULT bg-surface-container-lowest shadow-sm flex flex-col justify-between h-full">
+<div>
+<!-- Card Header -->
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-tertiary-container/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-[20px]">oil_barrel</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Dynamic Fuel Index Engine</h2>
+<span class="font-label-sm text-label-sm text-primary font-bold">CDFE-v2 • Calabar Real-Time Model</span>
+</div>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-primary-container/20 text-on-primary-container font-label-sm text-label-sm font-bold">Live Synced</span>
+</div>
+<!-- Formula Card -->
+<div class="p-space-md rounded bg-surface-container-low mb-space-md">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Algorithmic Pricing Vector</span>
+<span class="material-symbols-outlined text-primary text-[16px]">function</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm shadow-sm">
+<div class="font-bold text-primary font-headline-sm text-headline-sm mb-1">₦ Fare Formula =</div>
+<p class="font-mono text-xs leading-relaxed text-on-surface-variant">
+                Base (<strong class="text-on-surface">₦450</strong>) + (Km × [<strong class="text-primary">₦780</strong> × 0.125 / η]) + (Min × <strong class="text-on-surface">₦25</strong>) × Surge
+              </p>
+</div>
+<div class="flex items-center justify-between mt-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<span>Driver Escrow Protected Share: <strong class="text-primary">88.0%</strong></span>
+<span>Platform Take: <strong>12.0%</strong></span>
+</div>
+</div>
+<!-- Verified Fuel Station Watchlist -->
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-bold">Calabar Station Pricing Feeds</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Esuk Utu &amp; City Terminals</span>
+</div>
+<div class="space-y-space-xs mb-space-md">
+<!-- Row 1: NNPC Mega -->
+<div class="flex items-center justify-between p-space-sm rounded bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">ev_station</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">NNPC Mega Station</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Murtala Mohammed Hwy • 5m ago</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md text-primary block">₦780.00/L</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-primary-container/20 text-on-primary-container font-bold">Baseline Anchor</span>
+</div>
+</div>
+<!-- Row 2: TotalEnergies Marian -->
+<div class="flex items-center justify-between p-space-sm rounded bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">local_gas_station</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">TotalEnergies Marian</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Atekong Junction • 12m ago</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md text-on-surface block">₦815.00/L</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Within Spread (+4.4%)</span>
+</div>
+</div>
+<!-- Row 3: AP Watt Market -->
+<div class="flex items-center justify-between p-space-sm rounded bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">local_gas_station</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Ardova (AP) Petrol</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Watt Market Core • 18m ago</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md text-on-surface block">₦820.00/L</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Within Spread (+5.1%)</span>
+</div>
+</div>
+<!-- Row 4: Rainoil Depot -->
+<div class="flex items-center justify-between p-space-sm rounded bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px]">propane_tank</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Rainoil Bulk Depot</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Esuk Utu Marine Jetty • 2m ago</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md text-tertiary block">₦775.00/L</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-tertiary-container/20 text-on-tertiary-container font-bold">Depot Bulk</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Terminal Actions -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-center gap-space-sm">
+<button class="w-full sm:flex-1 py-space-sm px-space-md rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary/90 transition-all shadow-sm flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Update Benchmark Index</span>
+</button>
+<button class="w-full sm:w-auto py-space-sm px-space-md rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">science</span>
+<span>Test Simulation</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 4: Live Active Transit & Real-Time Escrow Operations Table -->
+<section class="p-space-lg rounded-DEFAULT bg-surface-container-lowest shadow-sm mb-space-xl">
+<div class="flex flex-wrap items-center justify-between gap-space-md pb-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-primary-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px]">table_rows</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Live Calabar Active Fleet Operations</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Real-time telematics, route waypoints, and encrypted PIN escrow release</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<input class="px-space-md py-space-xs pl-9 rounded bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:bg-surface-container w-64" placeholder="Search driver, rider, or trip ID..." type="text"/>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] absolute left-2.5 top-1/2 -translate-y-1/2">search</span>
+</div>
+<button class="p-space-xs rounded bg-surface-container-low hover:bg-surface-container transition-colors text-on-surface">
+<span class="material-symbols-outlined text-[20px]">filter_list</span>
+</button>
+</div>
+</div>
+<!-- Operations Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md rounded-l">Trip ID &amp; Time</th>
+<th class="py-space-sm px-space-md">Driver &amp; Vehicle</th>
+<th class="py-space-sm px-space-md">Rider</th>
+<th class="py-space-sm px-space-md">Corridor Route</th>
+<th class="py-space-sm px-space-md">Fare &amp; Fuel Split</th>
+<th class="py-space-sm px-space-md">Status &amp; Escrow Security</th>
+<th class="py-space-sm px-space-md rounded-r text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md font-mono">
+<span class="font-bold text-on-surface">#RT-88421</span>
+<span class="block text-on-surface-variant font-label-sm text-label-sm">14:41 WAT</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center font-bold text-primary font-label-md text-label-md">
+                  BB
+                </div>
+<div>
+<span class="font-title-md text-title-md block text-on-surface">Babajide Bassey</span>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant font-mono">
+<span>Corolla</span> • 
+                    <span class="bg-surface-container px-1 rounded text-on-surface">CAL-492-AB</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-title-md text-title-md block text-on-surface">Edidiong E.</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">☆ 4.96 (42 trips)</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-md text-label-md">Margaret Ekpo Airport</span>
+</div>
+<div class="w-0.5 h-2 bg-outline-variant ml-0.5"></div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-sm bg-inverse-surface"></span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">Channel View Hotel</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface block">₦2,850</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Fuel comp: ₦640</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-primary-container/20 text-on-primary-container font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>En Route • PIN Pending</span>
+</div>
+<span class="block text-on-surface-variant font-label-sm text-label-sm mt-1">Telematics: 100% Normal</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-primary transition-colors" title="Track GPS">
+<span class="material-symbols-outlined text-[18px]">near_me</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant transition-colors" title="Call Driver">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant transition-colors" title="More details">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group bg-surface-container-low/20">
+<td class="py-space-md px-space-md font-mono">
+<span class="font-bold text-on-surface">#RT-88419</span>
+<span class="block text-on-surface-variant font-label-sm text-label-sm">14:38 WAT</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center font-bold text-on-secondary-container font-label-md text-label-md">
+                  MA
+                </div>
+<div>
+<span class="font-title-md text-title-md block text-on-surface">Mary Archibong</span>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant font-mono">
+<span>Hyundai Elantra</span> • 
+                    <span class="bg-surface-container px-1 rounded text-on-surface">CR-819-AK</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-title-md text-title-md block text-on-surface">Dr. Victor Obi</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">☆ 5.0 (110 trips)</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-md text-label-md">Marian Rd (Atekong)</span>
+</div>
+<div class="w-0.5 h-2 bg-outline-variant ml-0.5"></div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-sm bg-inverse-surface"></span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">UNICAL Main Gate</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface block">₦2,150</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Driver Cut: ₦1,892</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-tertiary-container/20 text-on-tertiary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">pin</span>
+<span>Arrived • Awaiting PIN</span>
+</div>
+<span class="block text-primary font-label-sm text-label-sm mt-1">₦2,150 Escrow Locked</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-primary transition-colors" title="Track GPS">
+<span class="material-symbols-outlined text-[18px]">near_me</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant transition-colors" title="Call Driver">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant transition-colors" title="More details">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md font-mono">
+<span class="font-bold text-on-surface">#RT-88415</span>
+<span class="block text-on-surface-variant font-label-sm text-label-sm">14:34 WAT</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center font-bold text-primary font-label-md text-label-md">
+                  EH
+                </div>
+<div>
+<span class="font-title-md text-title-md block text-on-surface">Emmanuel Henshaw</span>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant font-mono">
+<span>Toyota Camry</span> • 
+                    <span class="bg-surface-container px-1 rounded text-on-surface">CAL-104-BB</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-title-md text-title-md block text-on-surface">Blessing K.</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">☆ 4.88 (19 trips)</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-md text-label-md">State Housing Complex</span>
+</div>
+<div class="w-0.5 h-2 bg-outline-variant ml-0.5"></div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-sm bg-inverse-surface"></span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">Marina Resort waterfront</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface block">₦3,400</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Surge factor: 1.25x</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px] text-primary">directions_car</span>
+<span>Driver Matched • Pickup</span>
+</div>
+<span class="block text-on-surface-variant font-label-sm text-label-sm mt-1">ETA Pickup: 3 mins</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-primary transition-colors" title="Track GPS">
+<span class="material-symbols-outlined text-[18px]">near_me</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant transition-colors" title="Call Driver">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant transition-colors" title="More details">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-space-md px-space-md font-mono">
+<span class="font-bold text-on-surface">#RT-88402</span>
+<span class="block text-on-surface-variant font-label-sm text-label-sm">14:15 WAT</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center font-bold text-on-secondary-container font-label-md text-label-md">
+                  NA
+                </div>
+<div>
+<span class="font-title-md text-title-md block text-on-surface">Ndifreke Asuquo</span>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant font-mono">
+<span>Sienna XL</span> • 
+                    <span class="bg-surface-container px-1 rounded text-on-surface">CAL-552-CR</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-title-md text-title-md block text-on-surface">Chief Akpan</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">☆ 4.95 (230 trips)</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-md text-label-md">Tinapa Resort Link</span>
+</div>
+<div class="w-0.5 h-2 bg-outline-variant ml-0.5"></div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-sm bg-inverse-surface"></span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">Watt Market Depot</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface block">₦5,200</span>
+<span class="font-label-sm text-label-sm text-primary font-bold block">₦4,576 Disbursed</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[14px]">check_circle</span>
+<span>Completed • PIN Verified</span>
+</div>
+<span class="block text-on-surface-variant font-label-sm text-label-sm mt-1">Escrow Released #992144</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant transition-colors" title="Receipt Audit">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant transition-colors" title="More details">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Bulk Status -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-md text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-sm">
+<span>Showing 4 of 342 active operations</span>
+<span class="text-outline-variant">•</span>
+<span class="text-primary font-bold">Esuk Utu &amp; Calabar Grid Active</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors disabled:opacity-50">Previous</button>
+<span class="px-space-sm py-1 rounded bg-primary text-on-primary font-bold">1</span>
+<button class="px-space-sm py-1 rounded bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors">2</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors">3</button>
+<span class="px-space-xs">...</span>
+<button class="px-space-sm py-1 rounded bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors">Next</button>
+</div>
+</div>
+</section>
+<!-- SECTION 5: Safety Command, Incident Response & Driver KYC Approvals Drawer -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- LEFT 7 COLS: Cross River Safety Command & Incident Intervention -->
+<div class="lg:col-span-7 flex flex-col justify-between p-space-lg rounded-DEFAULT bg-surface-container-lowest shadow-sm">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cross River Mobility Safety Command</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live SOS watch, telematics deviations &amp; biometric escrow disputes</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>0 Active SOS</span>
+</div>
+</div>
+<!-- Open Incident Alert Card -->
+<div class="p-space-md rounded bg-surface-container-low mb-space-md">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">device_thermostat</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface">Delayed Destination PIN #DSP-1049</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Marian Mall Corridor</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  Rider dropped at Marian Mall taxi slipway; passenger phone battery depleted prior to sharing destination 4-digit PIN. Driver Emmanuel Okon (Toyota Corolla CAL-311-AA) submitted matching dual-GPS geofence telemetry timestamp (14:28 WAT).
+                </p>
+<div class="flex items-center gap-space-md mt-space-sm text-on-surface font-label-sm text-label-sm">
+<span>Escrow At Stake: <strong class="text-primary font-bold">₦3,100</strong></span>
+<span class="text-on-surface-variant">•</span>
+<span>Driver Idle Timer: <strong>14m 20s</strong></span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm mt-space-md pt-space-xs">
+<button class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">phone_in_talk</span>
+<span>Request Controller Callback</span>
+</button>
+<button class="px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary/90 transition-colors shadow-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Authorize Telematics Escrow Release</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Operations Status Bar -->
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<span>Cross River State Police HQ Dispatch Liaison: Connected</span>
+<span class="text-primary font-label-sm text-label-sm font-bold">All 14 Corridor Nodes Operating</span>
+</div>
+</div>
+<!-- RIGHT 5 COLS: Driver Approvals & Regulatory KYC Queue -->
+<div class="lg:col-span-5 flex flex-col justify-between p-space-lg rounded-DEFAULT bg-surface-container-lowest shadow-sm">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-primary-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px]">how_to_reg</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Calabar KYC Compliance</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cross River VIO, LASRRA &amp; MOT roadworthiness</p>
+</div>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">3 Pending</span>
+</div>
+<!-- KYC List -->
+<div class="space-y-space-sm">
+<!-- Applicant 1 -->
+<div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center font-bold text-on-surface font-label-md text-label-md">
+                BO
+              </div>
+<div>
+<span class="font-title-md text-title-md text-on-surface block">Bassey Offiong</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Toyota Yaris 2018 • Inspection: CR-VIO Passed</span>
+</div>
+</div>
+<button class="px-space-sm py-1 rounded bg-primary text-on-primary text-label-sm font-label-sm font-bold hover:bg-primary/90 transition-colors">
+              Approve
+            </button>
+</div>
+<!-- Applicant 2 -->
+<div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center font-bold text-on-surface font-label-md text-label-md">
+                UA
+              </div>
+<div>
+<span class="font-title-md text-title-md text-on-surface block">Uche Anthony</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Honda Civic • Hacknee Permit Pending MOT</span>
+</div>
+</div>
+<button class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface text-label-sm font-label-sm hover:bg-surface-container transition-colors">
+              Review
+            </button>
+</div>
+<!-- Applicant 3 -->
+<div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center font-bold text-on-surface font-label-md text-label-md">
+                EI
+              </div>
+<div>
+<span class="font-title-md text-title-md text-on-surface block">Ekaette Ita</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Corolla Quest • Background Checks Verified</span>
+</div>
+</div>
+<button class="px-space-sm py-1 rounded bg-primary text-on-primary text-label-sm font-label-sm font-bold hover:bg-primary/90 transition-colors">
+              Approve
+            </button>
+</div>
+</div>
+</div>
+<div class="pt-space-md">
+<button class="w-full py-space-sm px-space-md rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Access Comprehensive Calabar Driver Registry (418)</span>
+</button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

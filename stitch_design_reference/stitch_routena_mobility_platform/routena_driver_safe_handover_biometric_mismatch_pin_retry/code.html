@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="en" style=""><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error-container": "#93000a", "on-surface-variant": "#3c4a42", "inverse-primary": "#4edea3", "on-primary-container": "#00422b", "primary": "#006c49", "tertiary": "#446900", "surface-variant": "#d3e4fe", "secondary": "#585e6f", "tertiary-fixed-dim": "#98da27", "on-primary": "#ffffff", "on-secondary-fixed-variant": "#404757", "secondary-container": "#d9dff4", "tertiary-container": "#78b300", "outline": "#6c7a71", "surface-container-highest": "#d3e4fe", "primary-fixed": "#6ffbbe", "on-surface": "#0b1c30", "primary-fixed-dim": "#4edea3", "on-tertiary-container": "#283f00", "on-primary-fixed": "#002113", "primary-container": "#10b981", "on-secondary-container": "#5c6274", "surface-container": "#e5eeff", "error": "#ba1a1a", "on-primary-fixed-variant": "#005236", "surface-bright": "#f8f9ff", "inverse-on-surface": "#eaf1ff", "on-secondary": "#ffffff", "tertiary-fixed": "#b2f746", "outline-variant": "#bbcabf", "secondary-fixed-dim": "#c0c6da", "on-tertiary-fixed-variant": "#334f00", "surface-tint": "#006c49", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#121f00", "on-tertiary": "#ffffff", "surface-container-low": "#eff4ff", "surface-dim": "#cbdbf5", "on-error": "#ffffff", "on-background": "#0b1c30", "error-container": "#ffdad6", "secondary-fixed": "#dce2f6", "inverse-surface": "#213145", "background": "#f8f9ff", "on-secondary-fixed": "#151b2a", "surface-container-high": "#dce9ff", "surface": "#f8f9ff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "gutter-md": "1.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xl": "2rem", "space-xs": "0.25rem", "margin-md": "1.5rem", "margin": "1rem", "gutter-lg": "2rem", "gutter": "1rem", "margin-lg": "3rem", "space-2xl": "3rem", "space-md": "1rem" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "currency-display": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Inter"] }, "fontSize": { "headline-lg": ["30px", { "lineHeight": "38px", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "800" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "currency-display": ["28px", { "lineHeight": "34px", "fontWeight": "800" }], "headline-xl": ["40px", { "lineHeight": "48px", "fontWeight": "800" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+    @keyframes successGlow {
+      0%, 100% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.25), 0 0 45px rgba(16, 185, 129, 0.1); }
+      50% { box-shadow: 0 0 35px rgba(78, 222, 163, 0.45), 0 0 65px rgba(16, 185, 129, 0.25); }
+    }
+    .sync-glow {
+      animation: successGlow 3s ease-in-out infinite;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><img alt="ROUTENA Wordmark &amp; Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WyHB3p59YCLXxtT1iFVSaLh7CZkBlVL3vDNg9YU65HQA9sfVWKpO0FesXZgkvSeQM6sOvvoAW-OtPwFV-D9wXacMBt7vbJojJjRusaj1ygqPd71VvsncvvrCACQHI_K1fVQUfjTL6H-sj1ffQeSE3Am65SKBWWiB2iitoqniovJL_v0FjQ8GsGI1Ndj7N2Q9SKEjoU_UVqlEZQVFYepnFOBvhktPpDAA1iO-OL0qvoTg"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold hidden sm:inline">ROUTENA</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-low shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><span class="flex h-2 w-2 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span><span class="font-label-sm text-label-sm text-on-surface-variant font-semibold tracking-tight whitespace-nowrap">⛽ Calabar ₦780/L</span></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:scale-95 transition-all"><span class="material-symbols-outlined text-[22px]">notifications</span></button><a class="w-11 h-11 flex items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-primary-container" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVnwgwQJ9zxFBOU10PonHxZLq1vm7-XGZexAMCP4ySkU4a7sB7wmiAzn4HvCwEFKJmMKp7mzjpXtoBLAIE3GIwsWs1lnRMEkVWv5_1O4qHUc8YLjhUpfIV9ZSCM7S96czt4AYOIb--dFBJ0I50iWB1U5p1dpSs_piqqyLpIW77ZXXMkKt3U9ehlP-bOgTHfkufBYTXJH2BImdxfrD81Lp4Gwc2BVwr-FEKVWk5OrOv"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full relative min-h-full font-headline select-none">
+<!-- DIMMED BACKGROUND: Roadside Inspection Credential Under Glass -->
+<div class="absolute inset-0 z-0 overflow-hidden pointer-events-none filter blur-md opacity-35 scale-[0.98]">
+<div class="p-margin flex flex-col gap-space-md">
+<!-- Cross River State MOT Header Simulation -->
+<div class="bg-surface-container-high rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[28px]" style="font-variation-settings: 'FILL' 1;">local_police</span>
+<div>
+<p class="text-[11px] font-bold tracking-widest text-on-surface uppercase">Cross River State MOT</p>
+<p class="text-[9px] text-on-surface-variant font-medium">VIO &amp; Hackney Electronic Permit</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-primary text-on-primary">VERIFIED ENCLAVE</span>
+</div>
+<div class="flex gap-space-md mt-space-sm items-center">
+<img class="w-20 h-20 rounded-lg object-cover shadow-sm" data-alt="A portrait of Bassey Edet Offiong, a disciplined African Nigerian commercial driver in his early forties wearing a clean collared shirt against a muted tactical emerald and deep navy institutional badge backdrop, warm studio soft lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX9fwJYnXSVtqiVfl0tZi1NjKvey3PB2EhjVsoh6jnTaXgOE70-TgTZwM4ZYkAGZk7iZrFLd8YLeZOQs8f5I8LllB9SvWgj-uPl8za6R0XCq91GRpzq2pgDd78xT8XpVODNuHR3uX_DadaAm0L7DWQvZefI2JikTKpCz8qA-UDnnpH35WtWP9K3DuqFN6O3lrvzIFF0QJBzng91v49vEraVDQMlrGllvgKEClKStOX"/>
+<div class="flex flex-col gap-0.5 min-w-0">
+<span class="text-[10px] uppercase tracking-wider text-on-surface-variant font-bold">Authorized Operator</span>
+<p class="text-title-md font-extrabold text-on-surface truncate">Bassey Edet Offiong</p>
+<p class="text-[11px] text-on-surface-variant">Badge: <span class="font-mono font-bold text-on-surface">CRS-HKN-984420</span></p>
+<p class="text-[11px] text-on-surface-variant">Plate: <span class="font-mono font-bold text-on-surface">CAL-492-XA</span></p>
+</div>
+</div>
+<div class="mt-space-md grid grid-cols-2 gap-space-xs bg-surface-container p-2.5 rounded-lg text-[10px]">
+<div>
+<span class="text-on-surface-variant">Class:</span> <span class="font-bold text-on-surface">Commercial Hackney</span>
+</div>
+<div>
+<span class="text-on-surface-variant">Expiry:</span> <span class="font-bold text-on-surface">31 DEC 2025</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL BACKDROP DARKENER -->
+<div class="absolute inset-0 z-10 bg-inverse-surface/85 backdrop-blur-xl"></div>
+<!-- TACTICAL SECURITY MODAL SHEET -->
+<div class="relative z-20 flex flex-col w-full px-margin pb-space-xl pt-space-xs max-w-md mx-auto">
+<!-- Grab bar & Modal Top Meta -->
+<div class="flex flex-col items-center mb-space-sm">
+<div class="w-12 h-1 rounded-full bg-outline/40 mb-space-sm"></div>
+<div class="flex items-center justify-between w-full">
+<!-- Status alert badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container text-on-error-container shadow-sm">
+<span class="flex h-2 w-2 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-error"></span>
+</span>
+<span class="font-headline text-[10px] tracking-wider font-extrabold uppercase">Biometric Mismatch • Fallback PIN</span>
+</div>
+<!-- Lock state dismiss button -->
+<button aria-label="Dismiss to locked inspection mode" class="w-8 h-8 rounded-full bg-surface-container-highest/20 hover:bg-surface-container-highest/40 flex items-center justify-center text-inverse-on-surface transition-all active:scale-95" id="dismiss-btn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Security Mismatch Emblem & Header -->
+<div class="flex flex-col items-center text-center my-space-xs">
+<div class="relative mb-3 flex items-center justify-center">
+<!-- Pulse glow backing -->
+<div class="w-16 h-16 rounded-full bg-error/15 absolute animate-pulse"></div>
+<!-- Tactical Coral/Red border container -->
+<div class="relative w-16 h-16 rounded-full bg-inverse-surface shadow-xl flex items-center justify-center text-error shadow-error/10">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'wght' 300;">fingerprint</span>
+<!-- Exclamation warning pip -->
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-error flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-on-error text-[15px] font-bold">priority_high</span>
+</div>
+</div>
+</div>
+<h1 class="text-headline-sm font-extrabold text-inverse-on-surface tracking-tight">Fingerprint Not Recognized</h1>
+<p class="text-body-sm text-outline-variant max-w-xs mt-1 leading-snug">
+        Biometric verification failed (Attempt 1 of 3). Unlock the driver enclave using your 4-digit security PIN.
+      </p>
+</div>
+<!-- Security Lockout Guard Alert Card -->
+<div class="mt-space-sm mb-space-md p-3 rounded-xl bg-error-container/25 text-inverse-on-surface flex items-start gap-2.5">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">shield_lock</span>
+<div class="flex flex-col text-left">
+<span class="text-[11px] font-extrabold uppercase tracking-wide text-error">Anti-Tamper Lockout Guard Active</span>
+<span class="text-[11px] text-outline-variant mt-0.5 leading-tight">2 biometric tries left before a mandatory 5-minute security lock. PIN override is ready.</span>
+</div>
+</div>
+<!-- Tactical PIN Entry Container -->
+<div class="flex flex-col items-center w-full mb-space-md">
+<div class="flex items-center justify-center gap-2 mb-2">
+<span class="text-label-sm uppercase tracking-widest text-outline-variant font-bold">Security PIN Verification</span>
+</div>
+<!-- 4 PIN Dot indicators with subtle alert glow -->
+<div class="flex items-center justify-center gap-5 my-space-xs transition-transform duration-200" id="pin-indicator-group">
+<div class="w-4 h-4 rounded-full bg-outline/40 shadow-inner transition-all duration-150" id="pin-dot-0"></div>
+<div class="w-4 h-4 rounded-full bg-outline/40 shadow-inner transition-all duration-150" id="pin-dot-1"></div>
+<div class="w-4 h-4 rounded-full bg-outline/40 shadow-inner transition-all duration-150" id="pin-dot-2"></div>
+<div class="w-4 h-4 rounded-full bg-outline/40 shadow-inner transition-all duration-150" id="pin-dot-3"></div>
+</div>
+<div class="flex items-center justify-between w-full px-space-xs mt-2 text-[11px] text-outline-variant font-medium">
+<span class="flex items-center gap-1 text-primary-fixed" id="pin-status-label">
+<span class="material-symbols-outlined text-[14px]">lock_reset</span> Ready for PIN entry
+        </span>
+<span class="font-mono text-outline-variant">Attempts: <strong class="text-inverse-on-surface">3 of 5</strong></span>
+</div>
+</div>
+<!-- Tactical Numeric Touch Keypad -->
+<div class="grid grid-cols-3 gap-2.5 w-full mb-space-md">
+<!-- 1 -->
+<button class="keypad-btn h-12 rounded-lg bg-surface-container-highest/15 active:bg-primary-container active:text-on-primary-container text-inverse-on-surface font-headline text-headline-sm font-bold flex items-center justify-center shadow-sm transition-all active:scale-95" data-key="1">1</button>
+<!-- 2 -->
+<button class="keypad-btn h-12 rounded-lg bg-surface-container-highest/15 active:bg-primary-container active:text-on-primary-container text-inverse-on-surface font-headline text-headline-sm font-bold flex flex-col items-center justify-center shadow-sm transition-all active:scale-95 leading-none" data-key="2">
+<span>2</span>
+<span class="text-[8px] tracking-widest text-outline-variant font-normal uppercase">ABC</span>
+</button>
+<!-- 3 -->
+<button class="keypad-btn h-12 rounded-lg bg-surface-container-highest/15 active:bg-primary-container active:text-on-primary-container text-inverse-on-surface font-headline text-headline-sm font-bold flex flex-col items-center justify-center shadow-sm transition-all active:scale-95 leading-none" data-key="3">
+<span>3</span>
+<span class="text-[8px] tracking-widest text-outline-variant font-normal uppercase">DEF</span>
+</button>
+<!-- 4 -->
+<button class="keypad-btn h-12 rounded-lg bg-surface-container-highest/15 active:bg-primary-container active:text-on-primary-container text-inverse-on-surface font-headline text-headline-sm font-bold flex flex-col items-center justify-center shadow-sm transition-all active:scale-95 leading-none" data-key="4">
+<span>4</span>
+<span class="text-[8px] tracking-widest text-outline-variant font-normal uppercase">GHI</span>
+</button>
+<!-- 5 -->
+<button class="keypad-btn h-12 rounded-lg bg-surface-container-highest/15 active:bg-primary-container active:text-on-primary-container text-inverse-on-surface font-headline text-headline-sm font-bold flex flex-col items-center justify-center shadow-sm transition-all active:scale-95 leading-none" data-key="5">
+<span>5</span>
+<span class="text-[8px] tracking-widest text-outline-variant font-normal uppercase">JKL</span>
+</button>
+<!-- 6 -->
+<button class="keypad-btn h-12 rounded-lg bg-surface-container-highest/15 active:bg-primary-container active:text-on-primary-container text-inverse-on-surface font-headline text-headline-sm font-bold flex flex-col items-center justify-center shadow-sm transition-all active:scale-95 leading-none" data-key="6">
+<span>6</span>
+<span class="text-[8px] tracking-widest text-outline-variant font-normal uppercase">MNO</span>
+</button>
+<!-- 7 -->
+<button class="keypad-btn h-12 rounded-lg bg-surface-container-highest/15 active:bg-primary-container active:text-on-primary-container text-inverse-on-surface font-headline text-headline-sm font-bold flex flex-col items-center justify-center shadow-sm transition-all active:scale-95 leading-none" data-key="7">
+<span>7</span>
+<span class="text-[8px] tracking-widest text-outline-variant font-normal uppercase">PQRS</span>
+</button>
+<!-- 8 -->
+<button class="keypad-btn h-12 rounded-lg bg-surface-container-highest/15 active:bg-primary-container active:text-on-primary-container text-inverse-on-surface font-headline text-headline-sm font-bold flex flex-col items-center justify-center shadow-sm transition-all active:scale-95 leading-none" data-key="8">
+<span>8</span>
+<span class="text-[8px] tracking-widest text-outline-variant font-normal uppercase">TUV</span>
+</button>
+<!-- 9 -->
+<button class="keypad-btn h-12 rounded-lg bg-surface-container-highest/15 active:bg-primary-container active:text-on-primary-container text-inverse-on-surface font-headline text-headline-sm font-bold flex flex-col items-center justify-center shadow-sm transition-all active:scale-95 leading-none" data-key="9">
+<span>9</span>
+<span class="text-[8px] tracking-widest text-outline-variant font-normal uppercase">WXYZ</span>
+</button>
+<!-- Bottom Row: Retry Biometric / 0 / Backspace -->
+<button class="h-12 rounded-lg bg-surface-container-highest/15 hover:bg-surface-container-highest/30 active:bg-primary/20 text-primary-fixed flex flex-col items-center justify-center shadow-sm transition-all active:scale-95" id="retry-bio-btn">
+<span class="material-symbols-outlined text-[20px]">fingerprint</span>
+<span class="text-[8px] font-bold tracking-tight uppercase mt-0.5">Retry Bio</span>
+</button>
+<button class="keypad-btn h-12 rounded-lg bg-surface-container-highest/15 active:bg-primary-container active:text-on-primary-container text-inverse-on-surface font-headline text-headline-sm font-bold flex items-center justify-center shadow-sm transition-all active:scale-95" data-key="0">0</button>
+<button aria-label="Delete last digit" class="h-12 rounded-lg bg-surface-container-highest/15 active:bg-error-container active:text-on-error-container text-inverse-on-surface flex items-center justify-center shadow-sm transition-all active:scale-95" id="delete-btn">
+<span class="material-symbols-outlined text-[20px]">backspace</span>
+</button>
+</div>
+<!-- Driver Quarantine Guard Footer Notice -->
+<div class="rounded-xl bg-surface-container-highest/10 p-3 flex flex-col gap-2">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary-fixed text-[18px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">enhanced_encryption</span>
+<p class="text-[11px] text-outline-variant leading-tight">
+<strong class="text-inverse-on-surface font-semibold">Enclave Shield Active:</strong> Private earnings, passenger contact details, and driver wallet remain quarantined until authentication succeeds.
+        </p>
+</div>
+<div class="flex items-center justify-between text-[9px] font-mono text-outline border-none pt-1">
+<span>Hardware Keystore: SECURE_ENCLAVE_CAL_8849</span>
+<span class="text-primary-fixed flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed animate-pulse"></span> AES-256
+        </span>
+</div>
+</div>
+</div>
+<!-- Interactive Logic for Tactile PIN entry & Retry feedback -->
+<script>
+    (() => {
+      const enteredPin = [];
+      const maxPinLength = 4;
+      const dots = [
+        document.getElementById('pin-dot-0'),
+        document.getElementById('pin-dot-1'),
+        document.getElementById('pin-dot-2'),
+        document.getElementById('pin-dot-3')
+      ];
+      const pinContainer = document.getElementById('pin-indicator-group');
+      const pinStatus = document.getElementById('pin-status-label');
+      const retryBioBtn = document.getElementById('retry-bio-btn');
+      const deleteBtn = document.getElementById('delete-btn');
+      const dismissBtn = document.getElementById('dismiss-btn');
+
+      const updateDots = () => {
+        dots.forEach((dot, index) => {
+          if (index < enteredPin.length) {
+            dot.className = "w-4 h-4 rounded-full bg-primary-fixed shadow-[0_0_10px_rgba(111,251,190,0.7)] scale-110 transition-all duration-150";
+          } else {
+            dot.className = "w-4 h-4 rounded-full bg-outline/40 shadow-inner transition-all duration-150";
+          }
+        });
+      };
+
+      const handleKeypadPress = (digit) => {
+        if (enteredPin.length < maxPinLength) {
+          enteredPin.push(digit);
+          updateDots();
+
+          if (enteredPin.length === maxPinLength) {
+            // Simulate verification handshake
+            pinStatus.innerHTML = '<span class="material-symbols-outlined text-[14px] animate-spin">sync</span> Verifying enclave token...';
+            pinStatus.className = 'flex items-center gap-1 text-primary-fixed';
+
+            setTimeout(() => {
+              if (enteredPin.join('') === '1234' || enteredPin.join('') === '0000') {
+                // Success feedback
+                dots.forEach(d => {
+                  d.className = "w-4 h-4 rounded-full bg-primary-container shadow-[0_0_14px_rgba(16,185,129,0.9)] scale-125 transition-all";
+                });
+                pinStatus.innerHTML = '<span class="material-symbols-outlined text-[14px]">verified</span> Enclave Unlocked. Safe Handover cleared.';
+                pinStatus.className = 'flex items-center gap-1 text-primary-fixed font-bold';
+              } else {
+                // Shake and Reset
+                if (pinContainer) {
+                  pinContainer.classList.add('translate-x-2');
+                  setTimeout(() => pinContainer.classList.remove('translate-x-2'), 60);
+                  setTimeout(() => pinContainer.classList.add('-translate-x-2'), 120);
+                  setTimeout(() => pinContainer.classList.remove('-translate-x-2'), 180);
+                }
+                dots.forEach(d => {
+                  d.className = "w-4 h-4 rounded-full bg-error shadow-[0_0_12px_rgba(186,26,26,0.8)] scale-110 transition-all";
+                });
+                pinStatus.innerHTML = '<span class="material-symbols-outlined text-[14px]">error</span> Invalid PIN code. Try again.';
+                pinStatus.className = 'flex items-center gap-1 text-error font-bold';
+
+                setTimeout(() => {
+                  enteredPin.length = 0;
+                  updateDots();
+                  pinStatus.innerHTML = '<span class="material-symbols-outlined text-[14px]">lock_reset</span> Ready for PIN entry';
+                  pinStatus.className = 'flex items-center gap-1 text-primary-fixed';
+                }, 900);
+              }
+            }, 600);
+          }
+        }
+      };
+
+      document.querySelectorAll('.keypad-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const val = btn.getAttribute('data-key');
+          if (val) handleKeypadPress(val);
+        });
+      });
+
+      if (deleteBtn) {
+        deleteBtn.addEventListener('click', () => {
+          if (enteredPin.length > 0) {
+            enteredPin.pop();
+            updateDots();
+          }
+        });
+      }
+
+      if (retryBioBtn) {
+        retryBioBtn.addEventListener('click', () => {
+          pinStatus.innerHTML = '<span class="material-symbols-outlined text-[14px] text-tertiary-fixed animate-pulse">fingerprint</span> Sensor ready. Rest thumb on reader...';
+          pinStatus.className = 'flex items-center gap-1 text-tertiary-fixed';
+          setTimeout(() => {
+            pinStatus.innerHTML = '<span class="material-symbols-outlined text-[14px]">lock_reset</span> Ready for PIN entry';
+            pinStatus.className = 'flex items-center gap-1 text-primary-fixed';
+          }, 2500);
+        });
+      }
+
+      if (dismissBtn) {
+        dismissBtn.addEventListener('click', () => {
+          pinStatus.innerHTML = '<span class="material-symbols-outlined text-[14px]">lock</span> Roadside inspection view locked.';
+          pinStatus.className = 'flex items-center gap-1 text-outline-variant';
+        });
+      }
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-gutter"><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-all hover:text-on-surface" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">explore</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-all hover:text-on-surface" data-path="book-ride" href="#"><span class="material-symbols-outlined text-[24px]">local_taxi</span><span class="font-label-sm text-label-sm">Book Ride</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-all hover:text-on-surface" data-path="drive-partner" href="#"><span class="material-symbols-outlined text-[24px]">steering_wheel_heat</span><span class="font-label-sm text-label-sm">Drive</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-all hover:text-on-surface" data-path="fleet-admin" href="#"><span class="material-symbols-outlined text-[24px]">hub</span><span class="font-label-sm text-label-sm">Fleet</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-all hover:text-on-surface" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav>
+</body></html>

@@ -1,0 +1,11 @@
+{
+  "status": "unresolved",
+  "note": "Addresses are fixtures for Google resolution; no route distances are stored until a successful live response is confirmed.",
+  "routes": [
+    ["Margaret Ekpo International Airport", "Marian Market"],
+    ["University of Calabar", "Watt Market"],
+    ["Marian Market", "Tinapa Business Resort"],
+    ["U. J. Esuene Stadium", "University of Calabar"],
+    ["Margaret Ekpo International Airport", "Tinapa Business Resort"]
+  ]
+}
