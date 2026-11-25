@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: routena-api
+    env: python
+    rootDir: backend
+    plan: free
+    buildCommand: "pip install -r requirements.txt && alembic upgrade head && python -m scripts.seed_demo"
+    startCommand: "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: ROUTENA_ROUTING_PROVIDER
+        value: "osrm"
+      - key: ROUTENA_DEMO_MODE
+        value: "true"
+      - key: ROUTENA_DRIVER_ONBOARDING_DEMO
+        value: "true"
+      - key: ROUTENA_DISPATCH_DEMO
+        value: "true"
+      - key: ROUTENA_ADMIN_TOKEN
+        value: "demo-admin-token-2026"
+      - key: ROUTENA_PILOT_CITY
+        value: "Calabar"
+      - key: ROUTENA_DATABASE_URL
+        value: "sqlite:///./routena.db"

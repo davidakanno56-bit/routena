@@ -7,11 +7,13 @@ The boundary is an illustrative test polygon, not an operating-area boundary.
 from datetime import datetime, timedelta, timezone
 from decimal import Decimal
 import json
+import secrets
 from sqlalchemy import select
 from app.config import settings
 from app.db import SessionLocal
+from app.driver_api import password_digest
 from app.fuel import review_observation, submit_observation
-from app.models import City, FareRule, FuelObservation, FuelStation, NigerianState, PricingZone, ServiceZone
+from app.models import City, DriverAccount, DriverVehicle, FareRule, FuelObservation, FuelStation, NigerianState, PricingZone, ServiceZone
 from app.schemas import FuelSubmission
 
 
@@ -113,7 +115,25 @@ def seed():
                 review_observation(db, item.id, "APPROVED", "demo-seed",
                                    notes="DEMO ONLY; illustrative value, not a real fuel observation",
                                    independent=False)
-        print("Seeded separate demo database with illustrative Calabar data.")
+        existing_driver = db.scalar(select(DriverAccount).where(DriverAccount.email == "driver@routena.test"))
+        if not existing_driver:
+            salt = secrets.token_bytes(16)
+            digest = password_digest("DriverDemo2026!", salt)
+            driver = DriverAccount(id=1, full_name="Emeka Okon", email="driver@routena.test",
+                                   phone="+2348012345678", city_id=city.id,
+                                   password_hash=f"{salt.hex()}${digest}",
+                                   status="APPROVED", licence_placeholder="CAL-DRV-84920",
+                                   vehicle_documents_ready=True)
+            db.add(driver)
+            db.flush()
+            vehicle = DriverVehicle(driver_id=driver.id, vehicle_class="STANDARD",
+                                    manufacturer="Toyota", model="Corolla", year=2021,
+                                    colour="Silver", registration_number="CAL-742-CR",
+                                    fuel_type="PMS", claimed_fuel_efficiency=Decimal("11.5"),
+                                    status="APPROVED")
+            db.add(vehicle)
+            db.commit()
+        print("Seeded separate demo database with illustrative Calabar data and approved driver.")
     finally:
         db.close()
 
